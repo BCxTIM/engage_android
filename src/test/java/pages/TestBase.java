@@ -2,6 +2,8 @@ package pages;
 
 import applogic.ApplicationManager;
 import applogic1.ApplicationManager1;
+import model.GetCodeModel;
+import model.LoginModel;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -13,6 +15,8 @@ import org.testng.annotations.BeforeClass;
 public class TestBase {
 
     protected ApplicationManager app;
+    public static LoginModel ADVISER = new LoginModel().setCountryCode("373").setPhone("60097171");
+    public static GetCodeModel CODE = new GetCodeModel().setCode("1111");
 
     @BeforeClass
     public  void setUp() throws Exception {

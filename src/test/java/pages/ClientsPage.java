@@ -41,7 +41,7 @@ public class ClientsPage extends InternalPage {
     @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnSave")
     public AndroidElement yesButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/rlSendAnotherInvitation")
+    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/rlChat")
     public AndroidElement sendInvitationLink;
 
     @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvDialogTitle")

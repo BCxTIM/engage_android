@@ -1,7 +1,6 @@
 package tests;
 
 import model.ContactUsModel;
-import model.LoginModel;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.TestBase;
@@ -15,8 +14,7 @@ public class ContactUsTests extends TestBase {
 
     @BeforeClass
     public void loginAsAdviser() throws Exception {
-        LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("60097171");
-        app.getLoginHelper().loginAs(loginModel);
+        app.getLoginHelper().loginAs(ADVISER);
         app.getGetCodeHelper().openContactUsForm();
         assertTrue(app.getContactUsHelper().isContactUsFormOpened());
     }

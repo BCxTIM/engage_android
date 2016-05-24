@@ -1,7 +1,5 @@
 package tests;
 
-import model.GetCodeModel;
-import model.LoginModel;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.TestBase;
@@ -15,11 +13,9 @@ public class AboutEngageTest extends TestBase {
 
     @BeforeClass
     public void loginAsAdviser() throws Exception {
-        LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("60097171");
-        GetCodeModel codeModel = new GetCodeModel().setCode("1111");
-        app.getLoginHelper().loginAs(loginModel);
+        app.getLoginHelper().loginAs(ADVISER);
         assertTrue(app.getLoginHelper().isGetCodeTrue());
-        app.getGetCodeHelper().setCode(codeModel);
+        app.getGetCodeHelper().setCode(CODE);
     }
 
     @Test
