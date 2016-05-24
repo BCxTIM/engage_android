@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Tests" verbose="5" data-provider-thread-count="1">
+    <test name="Test1">
+        <parameter name="path" value="/"/>
+        <classes>
+
+            <class name="tests.LoginFlowTests"/>
+            <class name="tests.ContactUsTests"/>
+            <class name="tests.AboutEngageTest"/>
+            <class name="tests.EditProfileTests"/>
+            <class name="tests.ClientsTest"/>
+
+        </classes>
+    </test>
+</suite>
