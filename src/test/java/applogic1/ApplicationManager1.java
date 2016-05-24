@@ -26,6 +26,10 @@ public class ApplicationManager1 implements ApplicationManager {
     private AndroidDriver driver;
 
     public ApplicationManager1() throws Exception {
+
+        AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
+        service.start();
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("platformName", "Android");
@@ -90,6 +94,8 @@ public class ApplicationManager1 implements ApplicationManager {
         if(driver != null) {
             driver.quit();
         }
+        AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
+        service.stop();
     }
 
     public AndroidDriver getAndroidDriver() {
