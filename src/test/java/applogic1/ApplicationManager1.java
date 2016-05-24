@@ -36,7 +36,7 @@ public class ApplicationManager1 implements ApplicationManager {
         capabilities.setCapability("automationName", "Appium");
 
         capabilities.setCapability("platformVersion", "4.4");
-        capabilities.setCapability("deviceName", "AndroidTestDevice");
+        capabilities.setCapability("deviceName", "Nexus_5X_API_23");
 
         File file = new File("/Users/timrusso/TIM/test/android/apps/app-advisor-debug.apk");
         capabilities.setCapability("app", file.getAbsolutePath());
