@@ -142,7 +142,7 @@ public class EditProfileTests  extends TestBase {
 
         this.cancelChangesAndOpenEdit();
 
-        String emptyPhone = "Invalid phone number";
+        String emptyPhone = "Please enter a phone number";
         EditProfileModel profileModel = new EditProfileModel().setCountryCode("373").setPhone("");
         app.getEditProfileHelper().setPhoneNumber(profileModel);
         assertTrue(app.getEditProfileHelper().isPhoneHaveError(emptyPhone));
