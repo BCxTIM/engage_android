@@ -38,7 +38,7 @@ public class ApplicationManager1 implements ApplicationManager {
         capabilities.setCapability("platformVersion", "4.4");
         capabilities.setCapability("deviceName", "Nexus_5X_API_23");
 
-        File file = new File("/Users/timrusso/TIM/test/android/apps/app-advisor-debug.apk");
+        File file = new File("/Users/timrusso/.jenkins/workspace/testgradle/app/build/outputs/apk/app-advisor-debug.apk");
         capabilities.setCapability("app", file.getAbsolutePath());
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
