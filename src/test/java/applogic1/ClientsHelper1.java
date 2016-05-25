@@ -34,6 +34,7 @@ public class ClientsHelper1 extends DriverBasedHelper implements ClientsHelper {
     }
 
     public boolean isContactDeleted(String text) {
+        pages.clientsPage.ensurePageLoaded();
         return pages.clientsPage.noClientsText.getText().contains(text);
     }
 
