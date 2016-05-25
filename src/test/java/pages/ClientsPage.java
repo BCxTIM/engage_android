@@ -57,10 +57,6 @@ public class ClientsPage extends InternalPage {
         return this;
     }
 
-    public ClientsPage waitForSendInvitationLinkIsVisible() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/rlChat")));
-        return this;
-    }
 
     public ClientsPage sendAnotherInvitation() {
         sendInvitationLink.click();

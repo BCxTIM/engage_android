@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1281ec79-7f2c-49ce-b3fe-b8f3e73def55" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/ClientsPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/ClientsPage.java" />
     </list>
     <ignored path="engage_adviser_test.iws" />
@@ -58,26 +59,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientsHelper1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientsHelper1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="452">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding>
                 <element signature="e#428#429#0" expanded="true" />
                 <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1507#1508#0" expanded="true" />
+                <element signature="e#1397#1398#0" expanded="true" />
+                <element signature="e#1453#1454#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientsPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/ClientsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+            <state relative-caret-position="84">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,8 +108,8 @@
         <option value="$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/EditProfileTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ClientsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" />
       </list>
     </option>
   </component>
@@ -968,19 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -994,9 +982,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/ClientsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+        <state relative-caret-position="84">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#1397#1398#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

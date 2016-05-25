@@ -41,7 +41,6 @@ public class ClientsHelper1 extends DriverBasedHelper implements ClientsHelper {
     public void sendAnotherInvitation() {
         pages.clientsPage.ensurePageLoaded();
         pages.clientsPage.swipeMenu()
-                .waitForSendInvitationLinkIsVisible()
                 .sendAnotherInvitation();
     }
 
