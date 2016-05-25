@@ -25,6 +25,7 @@ public class ClientsHelper1 extends DriverBasedHelper implements ClientsHelper {
     }
 
     public void deleteContact() {
+        pages.clientsPage.ensurePageLoaded();
         pages.clientsPage
                 .swipeMenu()
                 .clickEdit()
