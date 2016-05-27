@@ -34,7 +34,7 @@ public class LoginPage extends AnyPage {
     @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/status")
     public AndroidElement countrySelected;
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[3]/android.widget.TextView[1]")
+    @AndroidFindBy(xpath = "titaniumsoft.com.engage.advisor:id/tvWhy")
     public AndroidElement whyNeedNumberLink;
 
     @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnCool")
