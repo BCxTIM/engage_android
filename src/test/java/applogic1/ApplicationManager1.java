@@ -3,7 +3,11 @@ package applogic1;
 import applogic.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestResult;
+import ru.yandex.qatools.allure.annotations.Attachment;
 
 import java.io.File;
 import java.net.URL;
@@ -101,6 +105,7 @@ public class ApplicationManager1 implements ApplicationManager {
     public AndroidDriver getAndroidDriver() {
         return driver;
     }
+
 
 
 }
