@@ -1,7 +1,6 @@
 package tests;
 
 import model.LoginModel;
-
 import org.testng.annotations.Test;
 import pages.TestBase;
 
@@ -29,13 +28,13 @@ public class LoginFlowTests extends TestBase {
         assertTrue(app.getLoginHelper().alertClosed());
     }
 
-    @Test(enabled = false)
+    @Test
     public void loginFailedWithEmptyPhone() throws Exception {
         LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("");
         app.getLoginHelper().loginAs(loginModel);
         assertTrue(app.getLoginHelper().checkErrorText("You must enter a phone number"));
     }
-    @Test(enabled = false)
+    @Test
     public void loginFailedWithIncorrectPhone() throws Exception {
         LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("123123");
         app.getLoginHelper().loginAs(loginModel);

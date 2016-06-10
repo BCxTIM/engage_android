@@ -6,23 +6,22 @@ import applogic1.ApplicationManager1;
 import model.GetCodeModel;
 import model.LoginModel;
 
-import org.apache.tools.ant.types.resources.comparators.Date;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.testng.IHookCallBack;
+import org.testng.IHookable;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import ru.yandex.qatools.allure.annotations.Attachment;
 
-import java.io.File;
+import java.io.IOException;
 
 
 /**
  * Created by timrusso on 4/28/16.
  */
-public class TestBase {
+public class TestBase implements IHookable {
 
     protected ApplicationManager app;
     public static LoginModel ADVISER = new LoginModel().setCountryCode("373").setPhone("60097171");
@@ -38,25 +37,21 @@ public class TestBase {
         app.stop();
     }
 
-    @AfterMethod
-    public void onTestFailure(ITestResult result) {
-        if(!result.isSuccess()) {
-            byte[] srcFile =  ((TakesScreenshot) app.getAndroidDriver()).getScreenshotAs(OutputType.BYTES);
-            saveScreenshot(srcFile);
+
+    @Override
+    public void run(IHookCallBack callBack, ITestResult testResult) {
+        callBack.runTestMethod(testResult);
+        if (testResult.getThrowable() != null) {
+            try {
+                takeScreenShot(testResult.getMethod().getMethodName());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    @Attachment(value = "Page screenshot", type = "image/png")
-    private byte[] saveScreenshot(byte[] screenshot){
-        return screenshot;
+    @Attachment(value = "Failure in method {0}", type = "image/png")
+    private byte[] takeScreenShot(String methodName) throws IOException {
+        return app.getAndroidDriver().getScreenshotAs(OutputType.BYTES);
     }
-
-
-
-
-
-
-
-
-
 }
