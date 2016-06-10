@@ -28,10 +28,10 @@ public class ApplicationManager1 implements ApplicationManager {
     private ClientsHelper clientsHelper;
 
     private AndroidDriver driver;
+    private AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
 
     public ApplicationManager1() throws Exception {
 
-        AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
         service.start();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -97,9 +97,8 @@ public class ApplicationManager1 implements ApplicationManager {
     public void stop() {
         if(driver != null) {
             driver.quit();
+            service.stop();
         }
-        AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
-        service.stop();
     }
 
     public AndroidDriver getAndroidDriver() {
