@@ -25,7 +25,7 @@ public class AboutEngageTest extends TestBase {
         app.getMyProfileHelper().openAboutEngage();
         assertTrue(app.getAboutEngageHelper().isAboutEngageOpen("All right reserved, Engage 2016"));
         app.getAboutEngageHelper().openTermsOfUse();
-        assertTrue(app.getAboutEngageHelper().isTermsOfUseOpen("Terms of use"));
+        assertTrue(app.getAboutEngageHelper().isTermsOfUseOpen("Terms of useвыфввв"));
     }
 
 }
