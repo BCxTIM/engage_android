@@ -38,6 +38,6 @@ public class LoginFlowTests extends TestBase {
     public void loginFailedWithIncorrectPhone() throws Exception {
         LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("123123");
         app.getLoginHelper().loginAs(loginModel);
-        assertTrue(app.getLoginHelper().checkErrorText("Please check your number"));
+        assertTrue(app.getLoginHelper().checkErrorText("Invalid phone number"));
     }
 }

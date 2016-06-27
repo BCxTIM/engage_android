@@ -19,7 +19,7 @@ public class GetCodePage extends InternalPage {
     @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtEnterCode")
     public AndroidElement getCodeField;
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[2]/android.widget.TextView[1]")
+    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvTrouble")
     public AndroidElement havingTroubleLink;
 
 
