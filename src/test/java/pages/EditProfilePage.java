@@ -63,7 +63,7 @@ public class EditProfilePage extends InternalPage {
 
     public EditProfilePage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/edtPhone")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/edtTitle")));
         return this;
     }
 
