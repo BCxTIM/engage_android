@@ -22,8 +22,6 @@ public class LoginHelper1 extends DriverBasedHelper implements LoginHelper {
                 .setCountry(loginModel.getCountryCode())
                 .setPhone(loginModel.getPhone())
                 .clickGetCode();
-
-
     }
 
     public void checkWhyWeNeedNumber() {

@@ -15,6 +15,7 @@ public interface ApplicationManager {
     AboutEngageHelper getAboutEngageHelper();
     NavigationHelper getNavigationHelper();
     ClientsHelper getClientsHelper();
+    BrandHelper getBrandHelper();
 
     void stop();
     AndroidDriver getAndroidDriver();

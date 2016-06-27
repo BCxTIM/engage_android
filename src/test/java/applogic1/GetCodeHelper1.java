@@ -26,6 +26,11 @@ public class GetCodeHelper1 extends DriverBasedHelper implements GetCodeHelper{
         pages.getCodePage
                 .setCode(getCodeModel.getCode())
                 .clickGetStarted();
+
+        //check if adviser has 2 or more brands
+        if(pages.brandPage.mockUp.isDisplayed()) {
+            pages.brandPage.selectBrand1();
+        }
     }
 
 

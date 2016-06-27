@@ -26,6 +26,7 @@ public class ApplicationManager1 implements ApplicationManager {
     private AboutEngageHelper aboutEngageHelper;
     private NavigationHelper navigationHelper;
     private ClientsHelper clientsHelper;
+    private BrandHelper brandHelper;
 
     private AndroidDriver driver;
     private AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
@@ -39,8 +40,8 @@ public class ApplicationManager1 implements ApplicationManager {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("automationName", "Appium");
 
-        capabilities.setCapability("platformVersion", "4.4");
-        capabilities.setCapability("deviceName", "Nexus_5X_API_23");
+        capabilities.setCapability("platformVersion", "5.1");
+        capabilities.setCapability("deviceName", "Nexus_5X_API_22");
 
         File file = new File("/Users/timrusso/.jenkins/workspace/testgradle/app/build/outputs/apk/app-advisor-debug.apk");
         capabilities.setCapability("app", file.getAbsolutePath());
@@ -56,6 +57,7 @@ public class ApplicationManager1 implements ApplicationManager {
         aboutEngageHelper = new AboutEngageHelper1(this);
         navigationHelper = new NavigationHelper1(this);
         clientsHelper = new ClientsHelper1(this);
+        brandHelper = new BrandHelper1(this);
 
 
     }
@@ -93,6 +95,11 @@ public class ApplicationManager1 implements ApplicationManager {
     public ClientsHelper getClientsHelper() {
         return clientsHelper;
     }
+
+    public BrandHelper getBrandHelper() {
+        return brandHelper;
+    }
+
 
     public void stop() {
         if(driver != null) {
