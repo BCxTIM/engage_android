@@ -31,7 +31,7 @@ public class ContactUsTests extends TestBase {
     public void sendContactWithEmptyFields() throws Exception {
         ContactUsModel contactUsModel = new ContactUsModel().setName("").setPhone("").setEmail("");
         app.getContactUsHelper().contactUs(contactUsModel);
-        assertTrue(app.getContactUsHelper().nameEmpty("First name and last name should be 3 or more characters"));
+        assertTrue(app.getContactUsHelper().nameEmpty("Name should be 1 or more characters"));
         assertTrue(app.getContactUsHelper().phoneEmpty("Invalid phone number"));
         assertTrue(app.getContactUsHelper().emailEmpty("Invalid email address"));
     }

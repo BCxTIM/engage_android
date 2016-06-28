@@ -118,7 +118,7 @@ public class EditProfileTests  extends TestBase {
     @Test
     public void changeNameInvalid() throws Exception {
         //check with empty fields
-        String emptyErrorText = "First name and last name should be 3 or more characters";
+        String emptyErrorText = "Name should be 3 or more characters";
         EditProfileModel profileModel = new EditProfileModel().setFullName("");
         app.getEditProfileHelper().setFullName(profileModel);
         assertTrue(app.getEditProfileHelper().isFullNameHaveError(emptyErrorText));
