@@ -123,8 +123,9 @@ public class EditProfileTests  extends TestBase {
         app.getEditProfileHelper().setFullName(profileModel);
         assertTrue(app.getEditProfileHelper().isFullNameHaveError(emptyErrorText));
 
-       /* this.cancelChangesAndOpenEdit();
+       this.cancelChangesAndOpenEdit();
 
+        /*
         //check if full name contains 123 (NOT ACTUAL)
         String numbersErrorText = "Full name can't contain digits";
         EditProfileModel profileModel1 = new EditProfileModel().setFullName("tim 123");
