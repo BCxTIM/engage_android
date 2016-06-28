@@ -5,9 +5,9 @@
         <parameter name="path" value="/"/>
         <classes>
 
-            <!--<class name="tests.LoginFlowTests"/>
+            <class name="tests.LoginFlowTests"/>
             <class name="tests.ContactUsTests"/>
-            <class name="tests.AboutEngageTest"/>-->
+            <class name="tests.AboutEngageTest"/>
             <class name="tests.EditProfileTests"/>
             <class name="tests.ClientsTest"/>
 

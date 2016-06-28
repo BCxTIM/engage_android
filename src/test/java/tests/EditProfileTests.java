@@ -118,19 +118,19 @@ public class EditProfileTests  extends TestBase {
     @Test
     public void changeNameInvalid() throws Exception {
         //check with empty fields
-        String emptyErrorText = "Name should be 3 or more characters";
+        String emptyErrorText = "Name should be 1 or more characters";
         EditProfileModel profileModel = new EditProfileModel().setFullName("");
         app.getEditProfileHelper().setFullName(profileModel);
         assertTrue(app.getEditProfileHelper().isFullNameHaveError(emptyErrorText));
 
-        this.cancelChangesAndOpenEdit();
+       /* this.cancelChangesAndOpenEdit();
 
-        //check if full name contains 123
+        //check if full name contains 123 (NOT ACTUAL)
         String numbersErrorText = "Full name can't contain digits";
         EditProfileModel profileModel1 = new EditProfileModel().setFullName("tim 123");
         app.getEditProfileHelper().setFullName(profileModel1);
         assertTrue(app.getEditProfileHelper().isFullNameHaveError(numbersErrorText));
-        app.getEditProfileHelper().goBack();
+        app.getEditProfileHelper().goBack();*/
     }
 
     @Test
