@@ -20,12 +20,12 @@ public class BrandPage extends InternalPage {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[2]")
     public AndroidElement brand2;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/mock_up_screen")
+    @AndroidFindBy(id = APPID + "mock_up_screen")
     public AndroidElement mockUp;
 
     public BrandPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/mock_up_screen")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "mock_up_screen")));
         return this;
     }
 

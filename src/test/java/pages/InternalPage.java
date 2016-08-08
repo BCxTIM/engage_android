@@ -18,7 +18,7 @@ public class InternalPage extends AnyPage {
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.view.View[1]/android.support.v7.widget.LinearLayoutCompat[1]")
     public AndroidElement optionMenu;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/title")
+    @AndroidFindBy(id = APPID + "title")
     public AndroidElement switchButton;
 
 

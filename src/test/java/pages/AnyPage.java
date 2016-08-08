@@ -9,4 +9,6 @@ public abstract class AnyPage extends Page {
         super(pages);
     }
 
+    public static final String APPID = "engagedo.com.tagpay.leader:id/";
+
 }

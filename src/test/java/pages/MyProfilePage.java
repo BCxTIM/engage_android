@@ -15,19 +15,19 @@ public class MyProfilePage extends AnyPage {
         super(pages);
     }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tool_bar_title")
+    @AndroidFindBy(id = APPID + "tool_bar_title")
     public AndroidElement myProfileTitle;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/ivPencil")
+    @AndroidFindBy(id = APPID + "ivPencil")
     public AndroidElement editProfileButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvName")
+    @AndroidFindBy(id = APPID + "tvName")
     public AndroidElement fullName;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvTitle")
+    @AndroidFindBy(id = APPID + "tvTitle")
     public AndroidElement profession;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvPhone")
+    @AndroidFindBy(id = APPID + "tvPhone")
     public AndroidElement phone;
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.view.View[1]/android.support.v7.widget.LinearLayoutCompat[1]")
@@ -44,7 +44,7 @@ public class MyProfilePage extends AnyPage {
 
     public MyProfilePage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/tool_bar_title")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "tool_bar_title")));
         return this;
     }
 

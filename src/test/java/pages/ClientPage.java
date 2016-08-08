@@ -16,29 +16,29 @@ public class ClientPage extends InternalPage {
 
     public ClientPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/btnSendInvitation")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "btnSendInvitation")));
         return this;
     }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtName")
+    @AndroidFindBy(id = APPID + "edtName")
     public AndroidElement nameField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/flag")
+    @AndroidFindBy(id = APPID + "flag")
     public AndroidElement dropDownButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/search")
+    @AndroidFindBy(id = APPID + "search")
     public AndroidElement countryCodeField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/country_info")
+    @AndroidFindBy(id = APPID + "country_info")
     public AndroidElement countrySelected;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtPhone")
+    @AndroidFindBy(id = APPID + "edtPhone")
     public AndroidElement phoneField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtEmail")
+    @AndroidFindBy(id = APPID + "edtEmail")
     public AndroidElement emailField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnSendInvitation")
+    @AndroidFindBy(id = APPID + "btnSendInvitation")
     public AndroidElement sendInvitationButton;
 
     public ClientPage setName(String name) {

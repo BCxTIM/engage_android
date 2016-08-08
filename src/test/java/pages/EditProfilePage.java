@@ -14,48 +14,48 @@ public class EditProfilePage extends InternalPage {
         super(pages);
     }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtName")
+    @AndroidFindBy(id = APPID + "edtName")
     public AndroidElement fullNameField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/flagPicker")
+    @AndroidFindBy(id = APPID + "flagPicker")
     public AndroidElement dropDownButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/search")
+    @AndroidFindBy(id = APPID + "search")
     public AndroidElement searchField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/country_info")
+    @AndroidFindBy(id = APPID + "country_info")
     public AndroidElement countrySelected;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtPhone")
+    @AndroidFindBy(id = APPID + "edtPhone")
     public AndroidElement phoneField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtTitle")
+    @AndroidFindBy(id = APPID + "edtTitle")
     public AndroidElement professionField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtInvitationMessage")
+    @AndroidFindBy(id = APPID + "edtInvitationMessage")
     public AndroidElement invitationField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/ivUserImage")
+    @AndroidFindBy(id = APPID + "ivUserImage")
     public AndroidElement logo;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnSave")
+    @AndroidFindBy(id = APPID + "btnSave")
     public AndroidElement saveButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/backArrow")
+    @AndroidFindBy(id = APPID + "backArrow")
     public AndroidElement goBackButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnDiscard")
+    @AndroidFindBy(id = APPID + "btnDiscard")
     public AndroidElement discardButton;
 
 
     //text errors
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvInvalidFullName")
+    @AndroidFindBy(id = APPID + "tvInvalidFullName")
     public AndroidElement errorFullName;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvInvalidPhone")
+    @AndroidFindBy(id = APPID + "tvInvalidPhone")
     public AndroidElement errorPhone;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvInvalidTitle")
+    @AndroidFindBy(id = APPID + "tvInvalidTitle")
     public AndroidElement errorProfession;
 
 
@@ -63,7 +63,7 @@ public class EditProfilePage extends InternalPage {
 
     public EditProfilePage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/edtTitle")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "edtTitle")));
         return this;
     }
 

@@ -16,23 +16,23 @@ public class GetCodePage extends InternalPage {
         super(pages);
     }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtEnterCode")
+    @AndroidFindBy(id = APPID + "edtEnterCode")
     public AndroidElement getCodeField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvTrouble")
+    @AndroidFindBy(id = APPID + "tvTrouble")
     public AndroidElement havingTroubleLink;
 
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnGetStarted")
+    @AndroidFindBy(id = APPID + "btnGetStarted")
     public AndroidElement getStartedButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/imageView")
+    @AndroidFindBy(id = APPID + "imageView")
     public AndroidElement logo;
 
 
     public GetCodePage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/edtEnterCode")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "edtEnterCode")));
         return this;
     }
 

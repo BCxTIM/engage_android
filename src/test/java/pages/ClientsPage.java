@@ -14,46 +14,46 @@ public class ClientsPage extends InternalPage {
         super(pages);
     }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvNoClients")
+    @AndroidFindBy(id = APPID + "tvNoClients")
     public AndroidElement noClientsText;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnGetFromContacts")
+    @AndroidFindBy(id = APPID + "btnGetFromContacts")
     public AndroidElement getFromContactsButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnAddMan")
+    @AndroidFindBy(id = APPID + "btnAddMan")
     public AndroidElement addManuallyButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/add")
+    @AndroidFindBy(id = APPID + "add")
     public AndroidElement addButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvClientFullName")
+    @AndroidFindBy(id = APPID + "tvClientFullName")
     public AndroidElement clientName;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/ivClientOptions")
+    @AndroidFindBy(id = APPID + "ivClientOptions")
     public AndroidElement swipeButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/rlEdit")
+    @AndroidFindBy(id = APPID + "rlEdit")
     public AndroidElement editButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvDelete")
+    @AndroidFindBy(id = APPID + "tvDelete")
     public AndroidElement deleteButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnSave")
+    @AndroidFindBy(id = APPID + "btnSave")
     public AndroidElement yesButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/rlSendAnotherInvitation")
+    @AndroidFindBy(id = APPID + "rlSendAnotherInvitation")
     public AndroidElement sendInvitationLink;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvDialogTitle")
+    @AndroidFindBy(id = APPID + "tvDialogTitle")
     public AndroidElement invitationSendText;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/dialogClose")
+    @AndroidFindBy(id = APPID + "dialogClose")
     public AndroidElement invitationAlert;
 
 
     public ClientsPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/add")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "add")));
         return this;
     }
 

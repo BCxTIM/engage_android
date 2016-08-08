@@ -18,17 +18,17 @@ public class AboutPage extends AnyPage {
 
     public AboutPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/rights")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "rights")));
         return this;
     }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/terms_of_use")
+    @AndroidFindBy(id = APPID + "terms_of_use")
     public AndroidElement termsOfUseLink;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/dialogText")
+    @AndroidFindBy(id = APPID + "dialogText")
     public AndroidElement termsOfUseText;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/rights")
+    @AndroidFindBy(id = APPID + "rights")
     public AndroidElement rightsText;
 
     public AboutPage openTermsOfUse() {

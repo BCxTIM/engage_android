@@ -16,43 +16,43 @@ public class ContactUsPage extends InternalPage{
     }
 
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtName")
+    @AndroidFindBy(id = APPID + "edtName")
     public AndroidElement nameField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtPhone")
+    @AndroidFindBy(id = APPID + "edtPhone")
     public AndroidElement phoneField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtMail")
+    @AndroidFindBy(id = APPID + "edtMail")
     public AndroidElement emailField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/explanationTV")
+    @AndroidFindBy(id = APPID + "explanationTV")
     public AndroidElement explanationTVText;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnSendInvitation")
+    @AndroidFindBy(id = APPID + "btnSendInvitation")
     public AndroidElement sendButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvInvalidName")
+    @AndroidFindBy(id = APPID + "tvInvalidName")
     public AndroidElement nameInvalidError;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvInvalidPhone")
+    @AndroidFindBy(id = APPID + "tvInvalidPhone")
     public AndroidElement phoneInvalidError;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvInvalidMail")
+    @AndroidFindBy(id = APPID + "tvInvalidMail")
     public AndroidElement emailInvalidError;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvDialogTitle")
+    @AndroidFindBy(id = APPID + "tvDialogTitle")
     public AndroidElement thankYouAlert;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/dialogClose")
+    @AndroidFindBy(id = APPID + "dialogClose")
     public AndroidElement closeAlert;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/flagPicker")
+    @AndroidFindBy(id = APPID + "flagPicker")
     public AndroidElement flagDropdownList;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtSearch")
+    @AndroidFindBy(id = APPID + "edtSearch")
     public AndroidElement searchField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/country_info")
+    @AndroidFindBy(id = APPID + "country_info")
     public AndroidElement selectedCountry;
 
     public ContactUsPage setCountry(String text) {
@@ -65,7 +65,7 @@ public class ContactUsPage extends InternalPage{
 
     public ContactUsPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("titaniumsoft.com.engage.advisor:id/edtName")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "edtName")));
         return this;
     }
 

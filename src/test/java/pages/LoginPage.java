@@ -13,34 +13,34 @@ public class LoginPage extends AnyPage {
        super(pages);
    }
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/edtPhone")
+    @AndroidFindBy(id = APPID + "edtPhone")
     public AndroidElement phoneButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/logoLayout")
+    @AndroidFindBy(id =  APPID + "logoLayout")
     public AndroidElement logoButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnGetCode")
+    @AndroidFindBy(id = APPID + "btnGetCode")
     public AndroidElement getCodeButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvExplication")
+    @AndroidFindBy(id = APPID + "tvExplication")
     public AndroidElement errorPhoneText;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/flagPicker")
+    @AndroidFindBy(id = APPID + "flagPicker")
     public AndroidElement flagDropDownList;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/search")
+    @AndroidFindBy(id =  APPID + "search")
     public AndroidElement searchCountryField;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/status")
+    @AndroidFindBy(id = APPID + "status")
     public AndroidElement countrySelected;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/tvWhy")
+    @AndroidFindBy(id = APPID + "tvWhy")
     public AndroidElement whyNeedNumberLink;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/btnCool")
+    @AndroidFindBy(id = APPID + "btnCool")
     public AndroidElement coolButton;
 
-    @AndroidFindBy(id = "titaniumsoft.com.engage.advisor:id/dialogText")
+    @AndroidFindBy(id = APPID + "dialogText")
     public AndroidElement dialogText;
 
 
