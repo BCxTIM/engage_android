@@ -26,7 +26,7 @@ public class GetCodePage extends InternalPage {
     @AndroidFindBy(id = APPID + "btnGetStarted")
     public AndroidElement getStartedButton;
 
-    @AndroidFindBy(id = APPID + "imageView")
+    @AndroidFindBy(id = APPID + "logoImage")
     public AndroidElement logo;
 
 

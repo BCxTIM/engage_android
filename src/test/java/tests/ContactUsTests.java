@@ -32,7 +32,7 @@ public class ContactUsTests extends TestBase {
         ContactUsModel contactUsModel = new ContactUsModel().setName("").setPhone("").setEmail("");
         app.getContactUsHelper().contactUs(contactUsModel);
         assertTrue(app.getContactUsHelper().nameEmpty("Name should be 1 or more characters"));
-        assertTrue(app.getContactUsHelper().phoneEmpty("Invalid phone number"));
+        assertTrue(app.getContactUsHelper().phoneEmpty("You must enter a phone number"));
         assertTrue(app.getContactUsHelper().emailEmpty("Invalid email address"));
     }
 
