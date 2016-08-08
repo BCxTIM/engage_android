@@ -32,6 +32,7 @@ public class AboutPage extends AnyPage {
     public AndroidElement rightsText;
 
     public AboutPage openTermsOfUse() {
+        driver.scrollTo("Terms of use");
         termsOfUseLink.click();
         return this;
     }

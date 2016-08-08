@@ -14,18 +14,18 @@ public class BrandPage extends InternalPage {
         super(pages);
     }
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]")
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]")
     public AndroidElement brand1;
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[2]")
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[2]")
     public AndroidElement brand2;
 
-    @AndroidFindBy(id = APPID + "mock_up_screen")
-    public AndroidElement mockUp;
+    @AndroidFindBy(id = APPID + "rlHeader")
+    public AndroidElement brandPage;
 
     public BrandPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "mock_up_screen")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "rlHeader")));
         return this;
     }
 
@@ -38,6 +38,7 @@ public class BrandPage extends InternalPage {
         brand2.click();
         return this;
     }
+
 
 
 

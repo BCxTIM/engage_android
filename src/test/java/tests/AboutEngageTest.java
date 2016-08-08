@@ -23,7 +23,7 @@ public class AboutEngageTest extends TestBase {
     @Test
     public void checkAboutEngage() throws Exception {
         app.getMyProfileHelper().openAboutEngage();
-        assertTrue(app.getAboutEngageHelper().isAboutEngageOpen("All right reserved, Engage 2016"));
+        assertTrue(app.getAboutEngageHelper().isAboutEngageOpen("All right reserved, TagPay 2016"));
         app.getAboutEngageHelper().openTermsOfUse();
         assertTrue(app.getAboutEngageHelper().isTermsOfUseOpen("Terms of use"));
     }
