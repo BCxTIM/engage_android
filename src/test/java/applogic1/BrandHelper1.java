@@ -23,6 +23,12 @@ public class BrandHelper1 extends DriverBasedHelper implements BrandHelper {
         pages.brandPage.ensurePageLoaded();
         pages.brandPage.selectBrand2();
     }
+
+    public boolean lodBrandPage() {
+        return pages.brandPage.waitPageLoaded();
+    }
+
+
     
 
 }

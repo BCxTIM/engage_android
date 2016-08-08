@@ -7,5 +7,6 @@ public interface BrandHelper {
 
     void selectBrand1();
     void selectBrand2();
+    boolean lodBrandPage();
 
 }
