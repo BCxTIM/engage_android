@@ -12,7 +12,7 @@ import static org.testng.AssertJUnit.assertTrue;
  */
 public class LoginFlowTests extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void loginOk() throws Exception {
         app.getLoginHelper().loginAs(ADVISER);
         assertTrue(app.getLoginHelper().isGetCodeTrue());
@@ -20,7 +20,7 @@ public class LoginFlowTests extends TestBase {
         assertTrue(app.getMyProfileHelper().seeProfile("My Profile"));
     }
 
-    @Test(enabled = false)
+    @Test
     public void checkWhyWeNeedNumber() throws Exception {
         app.getLoginHelper().checkWhyWeNeedNumber();
         assertTrue(app.getLoginHelper().alertWeNeedNumberTrue("Why do we need your number"));
@@ -28,13 +28,13 @@ public class LoginFlowTests extends TestBase {
         assertTrue(app.getLoginHelper().alertClosed());
     }
 
-    @Test(enabled = false)
+    @Test
     public void loginFailedWithEmptyPhone() throws Exception {
         LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("");
         app.getLoginHelper().loginAs(loginModel);
         assertTrue(app.getLoginHelper().checkErrorText("You must enter a phone number"));
     }
-    @Test(enabled = false)
+    @Test
     public void loginFailedWithIncorrectPhone() throws Exception {
         LoginModel loginModel = new LoginModel().setCountryCode("373").setPhone("123123");
         app.getLoginHelper().loginAs(loginModel);

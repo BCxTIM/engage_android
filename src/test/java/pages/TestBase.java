@@ -17,6 +17,8 @@ import ru.yandex.qatools.allure.annotations.Attachment;
 
 import java.io.IOException;
 
+import static org.testng.AssertJUnit.assertTrue;
+
 
 /**
  * Created by timrusso on 4/28/16.
@@ -53,5 +55,16 @@ public class TestBase implements IHookable {
     @Attachment(value = "Failure in method {0}", type = "image/png")
     private byte[] takeScreenShot(String methodName) throws IOException {
         return app.getAndroidDriver().getScreenshotAs(OutputType.BYTES);
+    }
+
+
+    protected void loginAsAdviser() throws Exception {
+        app.getLoginHelper().loginAs(ADVISER);
+        assertTrue(app.getLoginHelper().isGetCodeTrue());
+        app.getGetCodeHelper().setCode(CODE);
+
+        if(app.getBrandHelper().lodBrandPage()) {
+            app.getBrandHelper().selectBrand1();
+        }
     }
 }

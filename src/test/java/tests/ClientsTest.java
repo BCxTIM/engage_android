@@ -13,10 +13,8 @@ import static org.testng.AssertJUnit.assertTrue;
 public class ClientsTest extends TestBase {
 
     @BeforeClass
-    public void loginAsAdviser() throws Exception {
-        app.getLoginHelper().loginAs(ADVISER);
-        assertTrue(app.getLoginHelper().isGetCodeTrue());
-        app.getGetCodeHelper().setCode(CODE);
+    public void login() throws Exception {
+        this.loginAsAdviser();
 
         app.getNavigationHelper().goToClientsScreen();
     }

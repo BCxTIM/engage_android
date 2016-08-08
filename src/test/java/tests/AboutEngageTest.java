@@ -14,14 +14,8 @@ public class AboutEngageTest extends TestBase {
 
 
     @BeforeClass
-    public void loginAsAdviser() throws Exception {
-        app.getLoginHelper().loginAs(ADVISER);
-        assertTrue(app.getLoginHelper().isGetCodeTrue());
-        app.getGetCodeHelper().setCode(CODE);
-
-        if(app.getBrandHelper().lodBrandPage()) {
-            app.getBrandHelper().selectBrand1();
-        }
+    public void login() throws Exception {
+        this.loginAsAdviser();
     }
 
     @Test

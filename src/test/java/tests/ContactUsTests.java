@@ -13,7 +13,7 @@ import static org.testng.AssertJUnit.assertTrue;
 public class ContactUsTests extends TestBase {
 
     @BeforeClass
-    public void loginAsAdviser() throws Exception {
+    public void login() throws Exception {
         app.getLoginHelper().loginAs(ADVISER);
         app.getGetCodeHelper().openContactUsForm();
         assertTrue(app.getContactUsHelper().isContactUsFormOpened());
