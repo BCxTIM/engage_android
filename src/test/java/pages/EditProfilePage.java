@@ -47,6 +47,9 @@ public class EditProfilePage extends InternalPage {
     @AndroidFindBy(id = APPID + "btnDiscard")
     public AndroidElement discardButton;
 
+    @AndroidFindBy(id = APPID + "tvPhone")
+    public AndroidElement phoneNumber;
+
 
     //text errors
     @AndroidFindBy(id = APPID + "tvInvalidFullName")
@@ -57,7 +60,6 @@ public class EditProfilePage extends InternalPage {
 
     @AndroidFindBy(id = APPID + "tvInvalidTitle")
     public AndroidElement errorProfession;
-
 
 
 
@@ -100,7 +102,8 @@ public class EditProfilePage extends InternalPage {
     }
 
     public void clickSaveButton() {
-        driver.scrollTo("Save");
+        invitationField.click();
+        phoneNumber.click();
         saveButton.click();
     }
 

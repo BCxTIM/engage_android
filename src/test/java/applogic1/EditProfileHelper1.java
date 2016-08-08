@@ -19,8 +19,9 @@ public class EditProfileHelper1 extends DriverBasedHelper implements EditProfile
     public void setProfile(EditProfileModel editProfileModel) {
         pages.editProfilePage
                 .setFullName(editProfileModel.getFullName())
-                .setCountry(editProfileModel.getCountryCode())
-                .setPhone(editProfileModel.getPhone())
+                .clickLogo()
+//                .setCountry(editProfileModel.getCountryCode())
+//                .setPhone(editProfileModel.getPhone())
                 .setProfession(editProfileModel.getProfession())
                 .clickLogo()
                 .clickSaveButton();
