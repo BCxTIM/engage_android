@@ -30,6 +30,7 @@ public class GetCodeHelper1 extends DriverBasedHelper implements GetCodeHelper{
         //check if adviser has 2 or more brands
         if(pages.brandPage.waitPageLoaded()) {
             pages.brandPage.selectBrand1();
+            //TODO вытащить в тесты выбор брэнда
         }
     }
 
