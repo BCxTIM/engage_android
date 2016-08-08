@@ -10,6 +10,6 @@ public interface MyProfileHelper {
     boolean isChangedPhoneNumber(String text);
     boolean isProfessionChanged(String text);
 
-    void openAboutEngage();
+    void openAboutForm();
 
 }

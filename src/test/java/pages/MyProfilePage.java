@@ -34,11 +34,11 @@ public class MyProfilePage extends AnyPage {
     public AndroidElement optionButton;
 
     @AndroidFindBy(xpath = "//android.widget.ListView[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
-    public AndroidElement aboutEngageLink;
+    public AndroidElement aboutLink;
 
-    public MyProfilePage openAboutEngageForm() {
+    public MyProfilePage openAboutForm() {
         optionButton.click();
-        aboutEngageLink.click();
+        aboutLink.click();
         return this;
     }
 

@@ -19,7 +19,7 @@ public class AboutEngageHelper1  extends DriverBasedHelper implements AboutEngag
         pages.aboutPage.openTermsOfUse();
     }
 
-    public boolean isAboutEngageOpen(String text) {
+    public boolean isAboutFormOpen(String text) {
         pages.aboutPage.ensurePageLoaded();
         return pages.aboutPage.rightsText.getText().contains(text);
     }

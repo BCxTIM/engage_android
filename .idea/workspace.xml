@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1281ec79-7f2c-49ce-b3fe-b8f3e73def55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/BrandHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/BrandHelper1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/AboutPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/AboutPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/BrandPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/BrandPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java" afterPath="$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic/MyProfileHelper.java" afterPath="$PROJECT_DIR$/src/test/java/applogic/MyProfileHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/AboutEngageTest.java" afterPath="$PROJECT_DIR$/src/test/java/tests/AboutEngageTest.java" />
     </list>
@@ -64,17 +64,37 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/AboutEngageTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="25" column="91" selection-start-line="25" selection-start-column="91" selection-end-line="25" selection-end-column="91" />
+              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AboutEngageHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutEngageHelper1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/AboutPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="210">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -83,28 +103,18 @@
       <file leaf-file-name="MyProfileHelper1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyProfilePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java">
+      <file leaf-file-name="MyProfileHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/applogic/MyProfileHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="35" column="147" selection-start-line="35" selection-start-column="147" selection-end-line="35" selection-end-column="147" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetCodeHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/applogic/GetCodeHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -131,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/ClientsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -166,9 +175,13 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/BrandPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic/BrandHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/BrandHelper1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/AboutEngageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/AboutPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic/MyProfileHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/AboutEngageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java" />
       </list>
     </option>
   </component>
@@ -877,8 +890,8 @@
     <history-entry file="AboutEngageTest - 2016.08.08 at 12h 58m 15s.xml">
       <configuration name="AboutEngageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactUsTests - 2016.08.08 at 12h 19m 05s.xml">
-      <configuration name="ContactUsTests" configurationId="TestNG" />
+    <history-entry file="AboutEngageTest - 2016.08.08 at 12h 59m 52s.xml">
+      <configuration name="AboutEngageTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ContactUsTests - 2016.08.08 at 12h 22m 09s.xml">
       <configuration name="ContactUsTests" configurationId="TestNG" />
@@ -942,7 +955,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/allure-results/a339e648-8c53-4848-9fbf-bb8a6b8564a2-testsuite.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/ru/yandex/qatools/allure/allure-java-annotations/1.4.23/allure-java-annotations-1.4.23.jar!/ru/yandex/qatools/allure/annotations/Attachment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -979,13 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1143,17 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/AnyPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1228,14 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/GetCodeHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/GetCodePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1284,18 +1270,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="465">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AboutPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="35" column="147" selection-start-line="35" selection-start-column="147" selection-end-line="35" selection-end-column="147" />
+        <state relative-caret-position="210">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/GetCodeHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/MyProfileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1303,15 +1313,23 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/AboutEngageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="25" column="91" selection-start-line="25" selection-start-column="91" selection-end-line="25" selection-end-column="91" />
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AboutPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

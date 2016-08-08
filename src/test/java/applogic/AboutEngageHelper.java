@@ -5,6 +5,6 @@ package applogic;
  */
 public interface AboutEngageHelper {
     void openTermsOfUse();
-    boolean isAboutEngageOpen(String text);
+    boolean isAboutFormOpen(String text);
     boolean isTermsOfUseOpen(String text);
 }
