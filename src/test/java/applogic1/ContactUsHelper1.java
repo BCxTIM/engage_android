@@ -42,7 +42,7 @@ public class ContactUsHelper1 extends DriverBasedHelper implements ContactUsHelp
     }
 
     public boolean thankYouAlert(String text) {
-        pages.contactUsPage.ensurePageLoaded();
+        pages.contactUsPage.ensureAlertLoaded();
         return pages.contactUsPage.thankYouAlert.getText().contains(text);
     }
 

@@ -69,6 +69,12 @@ public class ContactUsPage extends InternalPage{
         return this;
     }
 
+    public ContactUsPage ensureAlertLoaded() {
+        super.ensurePageLoaded();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "tvDialogTitle")));
+        return this;
+    }
+
     public ContactUsPage setName(String name) {
         nameField.sendKeys(name);
         return this;
