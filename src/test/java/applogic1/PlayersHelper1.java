@@ -24,6 +24,14 @@ public class PlayersHelper1 extends DriverBasedHelper implements PlayersHelper {
         return pages.playersPage.playerName.getText().contains(text);
     }
 
+    public void noDeletePlayer() {
+        pages.playersPage.ensurePageLoaded();
+        pages.playersPage
+                .swipeMenu()
+                .clickRemoveFromTeam()
+                .clickNo();
+    }
+
     public void deletePlayer() {
         pages.playersPage.ensurePageLoaded();
         pages.playersPage

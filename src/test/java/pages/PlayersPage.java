@@ -36,6 +36,12 @@ public class PlayersPage extends InternalPage {
     @AndroidFindBy(id = APPID + "tvDelete")
     public AndroidElement deleteButton;
 
+    @AndroidFindBy(id = APPID + "tvRemove")
+    public AndroidElement removeFromTeamButton;
+
+    @AndroidFindBy(id = "btnDiscard")
+    public AndroidElement noButton;
+
     @AndroidFindBy(id = APPID + "btnSave")
     public AndroidElement yesButton;
 
@@ -53,6 +59,15 @@ public class PlayersPage extends InternalPage {
         super.ensurePageLoaded();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "add")));
         return this;
+    }
+
+    public PlayersPage clickRemoveFromTeam() {
+        removeFromTeamButton.click();
+        return this;
+    }
+
+    public void clickNo() {
+        noButton.click();
     }
 
 

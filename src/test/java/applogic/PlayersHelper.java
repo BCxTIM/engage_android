@@ -8,6 +8,7 @@ import model.PlayerModel;
 public interface PlayersHelper {
     boolean ifNoPlayers(String text);
     boolean ifPlayerAdded(String text);
+    void noDeletePlayer();
     void deletePlayer();
     boolean ifPlayerDeleted(String text);
     void sendAnotherInvitation();
