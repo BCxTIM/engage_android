@@ -28,4 +28,20 @@ public class ContactTagPayHelper1 extends DriverBasedHelper implements ContactTa
         pages.contactTagPayPage.ensurePopUpLoaded();
         return pages.contactTagPayPage.thankPopUp.getText().contains(text);
     }
+
+    @Override
+    public boolean invalidText(String text) {
+        pages.contactTagPayPage.ensurePageLoaded();
+        return pages.contactTagPayPage.errorText.getText().contains(text);
+    }
+
+    @Override
+    public void goBack() {
+        pages.contactTagPayPage.goBack();
+    }
+
+    @Override
+    public void closePopUp() {
+        pages.contactTagPayPage.closePopUp();
+    }
 }

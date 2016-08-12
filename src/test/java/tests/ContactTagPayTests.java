@@ -26,9 +26,18 @@ public class ContactTagPayTests extends TestBase {
 
     @Test
     public void sendContact() throws Exception {
-        ContactTagPayModel contactTagPayModel = new ContactTagPayModel().setText("dsa");
+        ContactTagPayModel contactTagPayModel = new ContactTagPayModel().setText("test");
         app.getContactTagPayHelper().sendText(contactTagPayModel);
         assertTrue(app.getContactTagPayHelper().checkThankPopUp("Thank you"));
+        app.getContactTagPayHelper().closePopUp();
+    }
+
+    @Test
+    public void invalidSendText() throws Exception {
+        ContactTagPayModel contactTagPayModel = new ContactTagPayModel().setText("");
+        app.getContactTagPayHelper().sendText(contactTagPayModel);
+        assertTrue(app.getContactTagPayHelper().invalidText("Please enter some text to be sent"));
+        app.getContactTagPayHelper().goBack();
     }
 
 }

@@ -23,6 +23,15 @@ public class ContactTagPayPage extends InternalPage {
     @AndroidFindBy(id = APPID + "tvDialogTitle")
     public AndroidElement thankPopUp;
 
+    @AndroidFindBy(id = "tvInvalidText")
+    public AndroidElement errorText;
+
+    @AndroidFindBy(id = APPID + "backArrow")
+    public AndroidElement backButton;
+
+    @AndroidFindBy(id = APPID + "dialogClose")
+    public AndroidElement closePopUp;
+
 
     public ContactTagPayPage ensurePageLoaded() {
         super.ensurePageLoaded();
@@ -40,6 +49,14 @@ public class ContactTagPayPage extends InternalPage {
         textField.sendKeys(text);
         driver.hideKeyboard();
         return this;
+    }
+
+    public void goBack() {
+        backButton.click();
+    }
+
+    public void closePopUp() {
+        closePopUp.click();
     }
 
     public void clickSendButton() {
