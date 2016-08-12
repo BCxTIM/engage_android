@@ -8,13 +8,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 /**
  * Created by timrusso on 5/19/16.
  */
-public class ClientPage extends InternalPage {
+public class PlayerPage extends InternalPage {
 
-    public ClientPage(PageManager pages) {
+    public PlayerPage(PageManager pages) {
         super(pages);
     }
 
-    public ClientPage ensurePageLoaded() {
+    public PlayerPage ensurePageLoaded() {
         super.ensurePageLoaded();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "btnSendInvitation")));
         return this;
@@ -41,25 +41,26 @@ public class ClientPage extends InternalPage {
     @AndroidFindBy(id = APPID + "btnSendInvitation")
     public AndroidElement sendInvitationButton;
 
-    public ClientPage setName(String name) {
+    public PlayerPage setName(String name) {
         nameField.sendKeys(name);
         return this;
     }
 
-    public ClientPage setCountryCode(String countryCode) {
+    public PlayerPage setCountryCode(String countryCode) {
         dropDownButton.click();
         countryCodeField.sendKeys(countryCode);
         countrySelected.click();
         return this;
     }
 
-    public ClientPage setPhone(String phone) {
+    public PlayerPage setPhone(String phone) {
         phoneField.sendKeys(phone);
         return this;
     }
 
-    public ClientPage setEmail(String email) {
+    public PlayerPage setEmail(String email) {
         emailField.sendKeys(email);
+        driver.hideKeyboard();
         return this;
     }
 

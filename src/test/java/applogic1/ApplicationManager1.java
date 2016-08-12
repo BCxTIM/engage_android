@@ -3,11 +3,7 @@ package applogic1;
 import applogic.*;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.ITestResult;
-import ru.yandex.qatools.allure.annotations.Attachment;
 
 import java.io.File;
 import java.net.URL;
@@ -25,7 +21,7 @@ public class ApplicationManager1 implements ApplicationManager {
     private EditProfileHelper editProfileHelper;
     private AboutEngageHelper aboutEngageHelper;
     private NavigationHelper navigationHelper;
-    private ClientsHelper clientsHelper;
+    private PlayersHelper playersHelper;
     private BrandHelper brandHelper;
     private ContactTagPayHelper contactTagPayHelper;
 
@@ -57,7 +53,7 @@ public class ApplicationManager1 implements ApplicationManager {
         editProfileHelper = new EditProfileHelper1(this);
         aboutEngageHelper = new AboutEngageHelper1(this);
         navigationHelper = new NavigationHelper1(this);
-        clientsHelper = new ClientsHelper1(this);
+        playersHelper = new PlayersHelper1(this);
         brandHelper = new BrandHelper1(this);
         contactTagPayHelper = new ContactTagPayHelper1(this);
 
@@ -94,8 +90,8 @@ public class ApplicationManager1 implements ApplicationManager {
         return navigationHelper;
     }
 
-    public ClientsHelper getClientsHelper() {
-        return clientsHelper;
+    public PlayersHelper getPlayersHelper() {
+        return playersHelper;
     }
 
     public BrandHelper getBrandHelper() {

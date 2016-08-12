@@ -14,7 +14,7 @@ public interface ApplicationManager {
     EditProfileHelper getEditProfileHelper();
     AboutEngageHelper getAboutEngageHelper();
     NavigationHelper getNavigationHelper();
-    ClientsHelper getClientsHelper();
+    PlayersHelper getPlayersHelper();
     BrandHelper getBrandHelper();
     ContactTagPayHelper getContactTagPayHelper();
 

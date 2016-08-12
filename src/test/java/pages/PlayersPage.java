@@ -8,14 +8,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 /**
  * Created by timrusso on 5/19/16.
  */
-public class ClientsPage extends InternalPage {
+public class PlayersPage extends InternalPage {
 
-    public ClientsPage(PageManager pages) {
+    public PlayersPage(PageManager pages) {
         super(pages);
     }
 
-    @AndroidFindBy(id = APPID + "tvNoClients")
-    public AndroidElement noClientsText;
 
     @AndroidFindBy(id = APPID + "btnGetFromContacts")
     public AndroidElement getFromContactsButton;
@@ -27,7 +25,7 @@ public class ClientsPage extends InternalPage {
     public AndroidElement addButton;
 
     @AndroidFindBy(id = APPID + "tvClientFullName")
-    public AndroidElement clientName;
+    public AndroidElement playerName;
 
     @AndroidFindBy(id = APPID + "ivClientOptions")
     public AndroidElement swipeButton;
@@ -51,34 +49,34 @@ public class ClientsPage extends InternalPage {
     public AndroidElement invitationAlert;
 
 
-    public ClientsPage ensurePageLoaded() {
+    public PlayersPage ensurePageLoaded() {
         super.ensurePageLoaded();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "add")));
         return this;
     }
 
 
-    public ClientsPage sendAnotherInvitation() {
+    public PlayersPage sendAnotherInvitation() {
         sendInvitationLink.click();
         return this;
     }
 
-    public ClientsPage closeInvitationALert() {
+    public PlayersPage closeInvitationALert() {
         invitationAlert.click();
         return this;
     }
 
-    public ClientsPage swipeMenu() {
+    public PlayersPage swipeMenu() {
         swipeButton.click();
         return this;
     }
 
-    public ClientsPage clickEdit() {
+    public PlayersPage clickEdit() {
         editButton.click();
         return this;
     }
 
-    public ClientsPage deleteClick() {
+    public PlayersPage deleteClick() {
         deleteButton.click();
         return this;
     }
@@ -88,17 +86,17 @@ public class ClientsPage extends InternalPage {
     }
 
 
-    public ClientsPage getFromContacts() {
+    public PlayersPage getFromContacts() {
         getFromContactsButton.click();
         return this;
     }
 
-    public ClientsPage addManuallyContact() {
+    public PlayersPage addManuallyPlayer() {
         addManuallyButton.click();
         return this;
     }
 
-    public ClientsPage addContact() {
+    public PlayersPage addPlayer() {
         addButton.click();
         return this;
     }

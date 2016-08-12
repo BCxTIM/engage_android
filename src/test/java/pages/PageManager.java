@@ -18,8 +18,8 @@ public class PageManager {
     public EditProfilePage editProfilePage;
     public AboutPage aboutPage;
     public InternalPage internalPage;
-    public ClientsPage clientsPage;
-    public ClientPage clientPage;
+    public PlayersPage playersPage;
+    public PlayerPage playerPage;
     public BrandPage brandPage;
     public ContactTagPayPage contactTagPayPage;
 
@@ -33,8 +33,8 @@ public class PageManager {
         editProfilePage = initElements(new EditProfilePage(this));
         aboutPage = initElements(new AboutPage(this));
         internalPage = initElements(new InternalPage(this));
-        clientsPage = initElements(new ClientsPage(this));
-        clientPage = initElements(new ClientPage(this));
+        playersPage = initElements(new PlayersPage(this));
+        playerPage = initElements(new PlayerPage(this));
         brandPage = initElements(new BrandPage(this));
         contactTagPayPage = initElements(new ContactTagPayPage(this));
 

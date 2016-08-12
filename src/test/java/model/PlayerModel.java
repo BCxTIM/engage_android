@@ -3,14 +3,14 @@ package model;
 /**
  * Created by timrusso on 5/19/16.
  */
-public class ClientModel {
+public class PlayerModel {
 
     private String name;
     private String countryCode;
     private String phone;
     private String email;
 
-    public ClientModel setName(String name) {
+    public PlayerModel setName(String name) {
         this.name = name;
         return this;
     }
@@ -19,7 +19,7 @@ public class ClientModel {
         return name;
     }
 
-    public ClientModel setCountryCode(String countryCode) {
+    public PlayerModel setCountryCode(String countryCode) {
         this.countryCode = countryCode;
         return this;
     }
@@ -28,7 +28,7 @@ public class ClientModel {
         return countryCode;
     }
 
-    public ClientModel setPhone(String phone) {
+    public PlayerModel setPhone(String phone) {
         this.phone = phone;
         return this;
     }
@@ -37,7 +37,7 @@ public class ClientModel {
         return phone;
     }
 
-    public ClientModel setEmail(String email) {
+    public PlayerModel setEmail(String email) {
         this.email = email;
         return this;
     }

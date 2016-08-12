@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1281ec79-7f2c-49ce-b3fe-b8f3e73def55" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/PlayersTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/tests/ClientsTest.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/applogic/ClientsHelper.java" afterPath="$PROJECT_DIR$/src/test/java/applogic/PlayersHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/PlayersHelper1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/model/ClientModel.java" afterPath="$PROJECT_DIR$/src/test/java/model/PlayerModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/pages/ClientPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/PlayerPage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/pages/ClientsPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/PlayersPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic/ContactTagPayHelper.java" afterPath="$PROJECT_DIR$/src/test/java/applogic/ContactTagPayHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/ContactTagPayHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/ContactTagPayHelper1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/ContactTagPayPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/ContactTagPayPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/ContactTagPayTests.java" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactTagPayTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic/ApplicationManager.java" afterPath="$PROJECT_DIR$/src/test/java/applogic/ApplicationManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic/NavigationHelper.java" afterPath="$PROJECT_DIR$/src/test/java/applogic/NavigationHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java" afterPath="$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/InternalPage.java" afterPath="$PROJECT_DIR$/src/test/java/pages/InternalPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/pages/PageManager.java" afterPath="$PROJECT_DIR$/src/test/java/pages/PageManager.java" />
     </list>
     <ignored path="engage_adviser_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,63 +38,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContactTagPayTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/ContactTagPayTests.java">
+      <file leaf-file-name="PlayersHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/applogic/PlayersHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactTagPayHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/applogic/ContactTagPayHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="240">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <file leaf-file-name="PlayersHelper1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/PlayersHelper1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+              <folding>
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1539#1540#0" expanded="true" />
+                <element signature="e#1590#1591#0" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+                <element signature="e#2096#2097#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayersPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/PlayersPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-62">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayersTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/PlayersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigationHelper1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactTagPayPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ContactTagPayPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
-                <element signature="e#1486#1487#0" expanded="true" />
-                <element signature="e#1520#1521#0" expanded="true" />
-                <element signature="e#1552#1553#0" expanded="true" />
-                <element signature="e#1586#1587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactTagPayHelper1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ContactTagPayHelper1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-              <folding>
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,11 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/AbstractTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/ScreenshotListener.java" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/ElementScreenshot.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/AllureOnFailListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/MyListener.java" />
@@ -128,7 +132,6 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/ClientPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ClientsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ContactUsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/InternalPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/GetCodePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/ContactUsHelper1.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/AboutPage.java" />
@@ -140,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/test/java/applogic1/GetCodeHelper1.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/ContactUsTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/ClientsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/LoginFlowTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/EditProfilePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/EditProfileHelper1.java" />
@@ -148,12 +150,7 @@
         <option value="$PROJECT_DIR$/src/test/java/applogic/MyProfileHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/AboutTagPayTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/MyProfileHelper1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/ContactTagPayModel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/PageManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/EditProfileTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
@@ -161,6 +158,20 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/ContactTagPayTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/applogic1/ContactTagPayHelper1.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ContactTagPayPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic/PlayersHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/ClientModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/PlayerModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PageManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic/NavigationHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/ClientsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PlayerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/InternalPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/PlayersPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/applogic1/PlayersHelper1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/PlayersTest.java" />
       </list>
     </option>
   </component>
@@ -327,6 +338,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -411,7 +426,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactTagPayTests">
+  <component name="RunManager" selected="TestNG.PlayersTest">
     <configuration default="false" name="EditProfileTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -430,39 +445,6 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="EditProfileTests.changeNameInvalid" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="android" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.EditProfileTests" />
-      <option name="METHOD_NAME" value="changeNameInvalid" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="0" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
@@ -555,6 +537,39 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="PlayersTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="android" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.PlayersTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -808,18 +823,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.EditProfileTests" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.EditProfileTests.changeNameInvalid" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.EditProfileTests.changeProfile" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ContactTagPayTests" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG./Users/timrusso/TIM/test/android/src/test/resources/testng.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.EditProfileTests.changeProfile" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ContactTagPayTests" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG./Users/timrusso/TIM/test/android/src/test/resources/testng.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.PlayersTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ContactTagPayTests" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG./Users/timrusso/TIM/test/android/src/test/resources/testng.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.EditProfileTests.changeProfile" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.EditProfileTests" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.EditProfileTests.changeNameInvalid" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.PlayersTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ContactTagPayTests" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG./Users/timrusso/TIM/test/android/src/test/resources/testng.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.EditProfileTests.changeProfile" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.EditProfileTests" />
       </list>
     </recent_temporary>
   </component>
@@ -840,21 +855,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 00m 19s.xml">
-      <configuration name="ContactTagPayTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 05m 17s.xml">
-      <configuration name="ContactTagPayTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 07m 43s.xml">
-      <configuration name="ContactTagPayTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 10m 19s.xml">
-      <configuration name="ContactTagPayTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 11m 46s.xml">
-      <configuration name="ContactTagPayTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 14m 16s.xml">
       <configuration name="ContactTagPayTests" configurationId="TestNG" />
     </history-entry>
@@ -866,6 +866,21 @@
     </history-entry>
     <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 44m 51s.xml">
       <configuration name="ContactTagPayTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactTagPayTests - 2016.08.12 at 12h 46m 26s.xml">
+      <configuration name="ContactTagPayTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PlayersTest - 2016.08.12 at 14h 20m 03s.xml">
+      <configuration name="PlayersTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PlayersTest - 2016.08.12 at 14h 21m 44s.xml">
+      <configuration name="PlayersTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PlayersTest - 2016.08.12 at 14h 23m 31s.xml">
+      <configuration name="PlayersTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PlayersTest - 2016.08.12 at 14h 24m 59s.xml">
+      <configuration name="PlayersTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="_Users_timrusso_TIM_test_android_src_test_resources_testng_xml - 2016.08.12 at 12h 28m 27s.xml">
       <configuration name="/Users/timrusso/TIM/test/android/src/test/resources/testng.xml" configurationId="TestNG" />
@@ -923,13 +938,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/appium/java-client/3.4.1/java-client-3.4.1.jar!/io/appium/java_client/android/AndroidDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/LoginModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -952,32 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ClientPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/InternalPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ClientsHelper1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1018,13 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1043,13 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ClientsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1115,14 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/ContactTagPayModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1134,40 +1098,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/ClientModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ClientsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/GetCodePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="95" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,6 +1110,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,41 +1149,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/DriverBasedHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-          <folding>
-            <element signature="e#3183#3184#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3276#3277#0" expanded="true" />
-            <element signature="e#3318#3319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1256,14 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1285,14 +1184,6 @@
             <element signature="e#603#604#0" expanded="false" />
             <element signature="e#654#655#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,14 +1220,162 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/ContactTagPayPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="58" column="27" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="27" />
+        <state relative-caret-position="390">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding>
             <element signature="e#1486#1487#0" expanded="true" />
             <element signature="e#1520#1521#0" expanded="true" />
             <element signature="e#1552#1553#0" expanded="true" />
             <element signature="e#1586#1587#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/AboutEngageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/AboutEngageHelper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/ApplicationManager1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+          <folding>
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2887#2888#0" expanded="true" />
+            <element signature="e#2934#2935#0" expanded="true" />
+            <element signature="e#2970#2971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/DriverBasedHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/NavigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/PlayerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/NavigationHelper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PlayerPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1832#1833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/InternalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/PlayersPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic/PlayersHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/applogic1/PlayersHelper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/PlayersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

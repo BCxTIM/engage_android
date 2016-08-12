@@ -12,8 +12,8 @@ public class InternalPage extends AnyPage {
         super(pages);
     }
 
-    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.TextView[4]\n")
-    public AndroidElement clientsMenu;
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.widget.LinearLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.app.ActionBar.Tab[2]/android.widget.TextView[1]")
+    public AndroidElement playersMenu;
 
     @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.view.View[1]/android.support.v7.widget.LinearLayoutCompat[1]")
     public AndroidElement optionMenu;
@@ -22,12 +22,12 @@ public class InternalPage extends AnyPage {
     public AndroidElement switchButton;
 
 
-    public InternalPage openClientsMenu() {
-        clientsMenu.click();
+    public InternalPage openPlayersMenu() {
+        playersMenu.click();
         return this;
     }
 
-    public InternalPage openBrandPage() {
+    public InternalPage openTeamsPage() {
         optionMenu.click();
         switchButton.click();
         return this;
