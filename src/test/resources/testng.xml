@@ -7,9 +7,10 @@
 
             <class name="tests.LoginFlowTests"/>
             <class name="tests.ContactUsTests"/>
-            <class name="tests.AboutEngageTest"/>
+            <class name="tests.AboutTagPayTest"/>
             <class name="tests.EditProfileTests"/>
-            <class name="tests.ClientsTest"/>
+            <!--<class name="tests.ClientsTest"/>-->
+            <class name="tests.ContactTagPayTests"/>
 
         </classes>
     </test>

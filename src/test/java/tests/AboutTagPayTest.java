@@ -2,6 +2,7 @@ package tests;
 
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TestBase;
 
@@ -10,7 +11,7 @@ import static org.testng.AssertJUnit.assertTrue;
 /**
  * Created by timrusso on 5/19/16.
  */
-public class AboutEngageTest extends TestBase {
+public class AboutTagPayTest extends TestBase {
 
 
     @BeforeClass
@@ -18,9 +19,13 @@ public class AboutEngageTest extends TestBase {
         this.loginAsAdviser();
     }
 
+    @BeforeMethod
+    public void openAboutTagPayPage() throws Exception {
+        app.getNavigationHelper().openAboutTagPayForm();
+    }
+
     @Test
-    public void checkAboutEngage() throws Exception {
-        app.getMyProfileHelper().openAboutForm();
+    public void checkAboutTagPay() throws Exception {
         assertTrue(app.getAboutEngageHelper().isAboutFormOpen("All right reserved, TagPay 2016"));
         app.getAboutEngageHelper().openTermsOfUse();
         assertTrue(app.getAboutEngageHelper().isTermsOfUseOpen("Terms of use"));

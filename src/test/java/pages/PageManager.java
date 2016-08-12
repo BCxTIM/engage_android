@@ -21,6 +21,7 @@ public class PageManager {
     public ClientsPage clientsPage;
     public ClientPage clientPage;
     public BrandPage brandPage;
+    public ContactTagPayPage contactTagPayPage;
 
 
     public PageManager(AndroidDriver driver) {
@@ -35,6 +36,7 @@ public class PageManager {
         clientsPage = initElements(new ClientsPage(this));
         clientPage = initElements(new ClientPage(this));
         brandPage = initElements(new BrandPage(this));
+        contactTagPayPage = initElements(new ContactTagPayPage(this));
 
 
     }

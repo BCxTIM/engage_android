@@ -27,6 +27,7 @@ public class ApplicationManager1 implements ApplicationManager {
     private NavigationHelper navigationHelper;
     private ClientsHelper clientsHelper;
     private BrandHelper brandHelper;
+    private ContactTagPayHelper contactTagPayHelper;
 
     private AndroidDriver driver;
     private AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
@@ -58,6 +59,7 @@ public class ApplicationManager1 implements ApplicationManager {
         navigationHelper = new NavigationHelper1(this);
         clientsHelper = new ClientsHelper1(this);
         brandHelper = new BrandHelper1(this);
+        contactTagPayHelper = new ContactTagPayHelper1(this);
 
 
     }
@@ -98,6 +100,10 @@ public class ApplicationManager1 implements ApplicationManager {
 
     public BrandHelper getBrandHelper() {
         return brandHelper;
+    }
+
+    public ContactTagPayHelper getContactTagPayHelper() {
+        return contactTagPayHelper;
     }
 
 

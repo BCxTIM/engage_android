@@ -17,4 +17,16 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
     public void goToClientsScreen() {
         pages.internalPage.openClientsMenu();
     }
+
+    @Override
+    public void openAboutTagPayForm() {
+        pages.myProfilePage.ensurePageLoaded();
+        pages.myProfilePage.openAboutForm();
+    }
+
+    @Override
+    public void openContactTagPayForm() {
+        pages.myProfilePage.ensurePageLoaded();
+        pages.myProfilePage.openContactTagPayForm();
+    }
 }

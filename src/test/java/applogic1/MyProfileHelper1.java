@@ -36,10 +36,6 @@ public class MyProfileHelper1 extends DriverBasedHelper implements MyProfileHelp
         return pages.myProfilePage.profession.getText().contains(text);
     }
 
-    public void openAboutForm() {
-        pages.myProfilePage.ensurePageLoaded();
-        pages.myProfilePage.openAboutForm();
-    }
 
     public void openEditProfile() {
         pages.myProfilePage.ensurePageLoaded();

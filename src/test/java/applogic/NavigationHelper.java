@@ -6,4 +6,6 @@ package applogic;
 public interface NavigationHelper {
 
     void goToClientsScreen();
+    void openAboutTagPayForm();
+    void openContactTagPayForm();
 }

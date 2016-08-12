@@ -36,6 +36,9 @@ public class MyProfilePage extends AnyPage {
     @AndroidFindBy(xpath = "//android.widget.ListView[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
     public AndroidElement aboutLink;
 
+    @AndroidFindBy(xpath = "//android.widget.ListView[1]/android.widget.LinearLayout[3]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
+    public AndroidElement contactTagPayLink;
+
     public MyProfilePage openAboutForm() {
         optionButton.click();
         aboutLink.click();
@@ -50,6 +53,12 @@ public class MyProfilePage extends AnyPage {
 
     public MyProfilePage openEditProfile() {
         editProfileButton.click();
+        return this;
+    }
+
+    public MyProfilePage openContactTagPayForm() {
+        optionButton.click();
+        contactTagPayLink.click();
         return this;
     }
 
