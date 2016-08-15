@@ -41,6 +41,15 @@ public class PlayerPage extends InternalPage {
     @AndroidFindBy(id = APPID + "btnSendInvitation")
     public AndroidElement sendInvitationButton;
 
+    @AndroidFindBy(id = APPID + "tvInvalidName")
+    public AndroidElement nameErrorText;
+
+    @AndroidFindBy(id = APPID + "tvInvalidPhone")
+    public AndroidElement phoneErrorText;
+
+    @AndroidFindBy(id = APPID + "tvInvalidMail")
+    public AndroidElement emailErrorText;
+
     public PlayerPage setName(String name) {
         nameField.sendKeys(name);
         return this;

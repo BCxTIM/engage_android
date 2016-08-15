@@ -24,6 +24,19 @@ public class PlayersHelper1 extends DriverBasedHelper implements PlayersHelper {
         return pages.playersPage.playerName.getText().contains(text);
     }
 
+    public boolean nameError(String text) {
+        return pages.playerPage.nameErrorText.getText().contains(text);
+    }
+
+    public boolean phoneError(String text) {
+        return pages.playerPage.phoneErrorText.getText().contains(text);
+    }
+
+    public boolean emailError(String text) {
+        return pages.playerPage.emailErrorText.getText().contains(text);
+    }
+
+
     public void noDeletePlayer() {
         pages.playersPage.ensurePageLoaded();
         pages.playersPage
@@ -83,9 +96,12 @@ public class PlayersHelper1 extends DriverBasedHelper implements PlayersHelper {
         pages.playersPage.getFromContacts();
     }
 
-    public void addManuallyPlayer(PlayerModel playerModel) {
+    public void goToAddPlayer() {
         pages.playersPage.addManuallyPlayer();
         pages.playerPage.ensurePageLoaded();
+    }
+
+    public void addManuallyPlayer(PlayerModel playerModel) {
         pages.playerPage
                 .setName(playerModel.getName())
                 .setCountryCode(playerModel.getCountryCode())
