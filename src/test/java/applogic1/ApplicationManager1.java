@@ -22,7 +22,7 @@ public class ApplicationManager1 implements ApplicationManager {
     private AboutEngageHelper aboutEngageHelper;
     private NavigationHelper navigationHelper;
     private PlayersHelper playersHelper;
-    private BrandHelper brandHelper;
+    private TeamHelper teamHelper;
     private ContactTagPayHelper contactTagPayHelper;
 
     private AndroidDriver driver;
@@ -54,7 +54,7 @@ public class ApplicationManager1 implements ApplicationManager {
         aboutEngageHelper = new AboutEngageHelper1(this);
         navigationHelper = new NavigationHelper1(this);
         playersHelper = new PlayersHelper1(this);
-        brandHelper = new BrandHelper1(this);
+        teamHelper = new TeamHelper1(this);
         contactTagPayHelper = new ContactTagPayHelper1(this);
 
 
@@ -94,8 +94,8 @@ public class ApplicationManager1 implements ApplicationManager {
         return playersHelper;
     }
 
-    public BrandHelper getBrandHelper() {
-        return brandHelper;
+    public TeamHelper getTeamHelper() {
+        return teamHelper;
     }
 
     public ContactTagPayHelper getContactTagPayHelper() {

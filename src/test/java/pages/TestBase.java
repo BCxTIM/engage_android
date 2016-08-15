@@ -63,8 +63,8 @@ public class TestBase implements IHookable {
         assertTrue(app.getLoginHelper().isGetCodeTrue());
         app.getGetCodeHelper().setCode(CODE);
 
-        if(app.getBrandHelper().lodBrandPage()) {
-            app.getBrandHelper().selectBrand1();
+        if(app.getTeamHelper().loadTeamPage()) {
+            app.getTeamHelper().selectTeam1();
         }
     }
 }

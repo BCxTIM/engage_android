@@ -15,7 +15,7 @@ public interface ApplicationManager {
     AboutEngageHelper getAboutEngageHelper();
     NavigationHelper getNavigationHelper();
     PlayersHelper getPlayersHelper();
-    BrandHelper getBrandHelper();
+    TeamHelper getTeamHelper();
     ContactTagPayHelper getContactTagPayHelper();
 
     void stop();

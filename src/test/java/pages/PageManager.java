@@ -20,7 +20,7 @@ public class PageManager {
     public InternalPage internalPage;
     public PlayersPage playersPage;
     public PlayerPage playerPage;
-    public BrandPage brandPage;
+    public TeamPage teamPage;
     public ContactTagPayPage contactTagPayPage;
 
 
@@ -35,7 +35,7 @@ public class PageManager {
         internalPage = initElements(new InternalPage(this));
         playersPage = initElements(new PlayersPage(this));
         playerPage = initElements(new PlayerPage(this));
-        brandPage = initElements(new BrandPage(this));
+        teamPage = initElements(new TeamPage(this));
         contactTagPayPage = initElements(new ContactTagPayPage(this));
 
 
