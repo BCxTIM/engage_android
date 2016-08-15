@@ -5,6 +5,7 @@ package applogic;
  */
 public interface NavigationHelper {
 
+    void goToBrandPage();
     void goToPlayersScreen();
     void openAboutTagPayForm();
     void openContactTagPayForm();

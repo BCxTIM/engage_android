@@ -2,7 +2,6 @@ package tests;
 
 import model.PlayerModel;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.TestBase;
 
@@ -44,6 +43,17 @@ public class PlayersTest extends TestBase {
     }
 
     @Test(dependsOnMethods = "addPlayer")
+    public void checkToUserNotAppearInOtherTeam() throws Exception {
+        app.getNavigationHelper().goToBrandPage();
+        app.getBrandHelper().selectBrand2();
+        app.getNavigationHelper().goToPlayersScreen();
+        assertTrue(app.getPlayersHelper().ifNoPlayers("Add Manually"));
+        app.getNavigationHelper().goToBrandPage();
+        app.getBrandHelper().selectBrand1();
+        app.getNavigationHelper().goToPlayersScreen();
+    }
+
+    @Test(dependsOnMethods = "checkToUserNotAppearInOtherTeam")
     public void tryDeletePlayerFromMenu() throws Exception {
         app.getPlayersHelper().noDeletePlayer();
         assertTrue(app.getPlayersHelper().ifPlayerAdded(newName));
