@@ -10,12 +10,14 @@ public interface PlayersHelper {
     boolean ifPlayerAdded(String text);
     void noDeletePlayer();
     void deletePlayer();
+    void editPlayer(PlayerModel playerModel);
+    boolean ifPlayerEdited(String text);
     boolean ifPlayerDeleted(String text);
     void sendAnotherInvitation();
     boolean ifInvitationSent(String text);
     void closeInvitationAlert();
 
     void getFromContacts();
-    void addManuallyPlayer(PlayerModel clientModel);
+    void addManuallyPlayer(PlayerModel playerModel);
     void addPlayer();
 }

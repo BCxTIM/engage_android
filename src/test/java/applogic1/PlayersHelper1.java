@@ -41,6 +41,24 @@ public class PlayersHelper1 extends DriverBasedHelper implements PlayersHelper {
                 .clickYes();
     }
 
+
+    public void editPlayer(PlayerModel playerModel) {
+        pages.playersPage
+                .swipeMenu()
+                .clickEdit();
+        pages.playerPage.ensurePageLoaded();
+        pages.playerPage
+                .setName(playerModel.getName())
+                .setEmail(playerModel.getEmail())
+                .sendInvitation();
+    }
+
+
+    public boolean ifPlayerEdited(String text) {
+        pages.playersPage.ensurePageLoaded();
+        return pages.playersPage.playerName.getText().contains(text);
+    }
+
     public boolean ifPlayerDeleted(String text) {
         pages.playersPage.ensurePageLoaded();
         return pages.playersPage.addManuallyButton.getText().contains(text);
