@@ -28,7 +28,7 @@ public class AboutTagPayTest extends TestBase {
     public void checkAboutTagPay() throws Exception {
         assertTrue(app.getAboutEngageHelper().isAboutFormOpen("All right reserved, TagPay 2016"));
         app.getAboutEngageHelper().openTermsOfUse();
-        assertTrue(app.getAboutEngageHelper().isTermsOfUseOpen("Terms of use"));
+        assertTrue(app.getAboutEngageHelper().isTermsOfUseOpen("Terms of Use"));
     }
 
 }
