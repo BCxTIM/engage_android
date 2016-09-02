@@ -43,6 +43,26 @@ public class LoginPage extends AnyPage {
     @AndroidFindBy(id = APPID + "dialogText")
     public AndroidElement dialogText;
 
+    @AndroidFindBy(id = APPID + "ivSettings")
+    public AndroidElement envButton;
+
+    @AndroidFindBy(id = APPID + "code_md")
+    public AndroidElement devButton;
+
+    @AndroidFindBy(id = APPID + "btnDone")
+    public AndroidElement doneButton;
+
+    public LoginPage clickEnvButton() {
+        envButton.click();
+        return this;
+    }
+
+    public LoginPage selectDevServer() {
+        devButton.click();
+        doneButton.click();
+        return this;
+    }
+
 
     public LoginPage setCountry(String countryCode) {
         flagDropDownList.click();

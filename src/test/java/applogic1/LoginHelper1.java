@@ -34,6 +34,12 @@ public class LoginHelper1 extends DriverBasedHelper implements LoginHelper {
         return pages.getCodePage.getCodeField.isDisplayed();
     }
 
+
+    public void switchToDevServer(LoginModel loginModel) {
+        pages.loginPage.setPhone(loginModel.getPhone()).clickGetCode();
+        pages.loginPage.clickEnvButton().selectDevServer();
+    }
+
     public boolean alertWeNeedNumberTrue(String text) {
         return pages.loginPage.dialogText
                 .getText().contains(text);

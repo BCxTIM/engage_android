@@ -14,4 +14,6 @@ public interface LoginHelper {
     boolean alertClosed();
     boolean checkErrorText(String text);
     boolean isGetCodeTrue();
+
+    void switchToDevServer(LoginModel loginModel);
 }

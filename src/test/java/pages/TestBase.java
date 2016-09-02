@@ -59,6 +59,11 @@ public class TestBase implements IHookable {
 
 
     protected void loginAsAdviser() throws Exception {
+        //test on dev server
+            LoginModel loginModel = new LoginModel().setPhone("00000");
+            app.getLoginHelper().switchToDevServer(loginModel);
+        //------------------------------------------------------------
+
         app.getLoginHelper().loginAs(ADVISER);
         assertTrue(app.getLoginHelper().isGetCodeTrue());
         app.getGetCodeHelper().setCode(CODE);
