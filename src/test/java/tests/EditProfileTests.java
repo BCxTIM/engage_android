@@ -20,6 +20,7 @@ public class EditProfileTests  extends TestBase {
 
     @BeforeMethod
     public void openEditProfilePage() throws Exception {
+        app.getNavigationHelper().goToMyProfile();
         app.getMyProfileHelper().openEditProfile();
     }
 

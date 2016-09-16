@@ -46,8 +46,8 @@ public class LoginPage extends AnyPage {
     @AndroidFindBy(id = APPID + "ivSettings")
     public AndroidElement envButton;
 
-    @AndroidFindBy(id = APPID + "code_md")
-    public AndroidElement devButton;
+    @AndroidFindBy(id = APPID + "code_il")
+    public AndroidElement qaButton;
 
     @AndroidFindBy(id = APPID + "btnDone")
     public AndroidElement doneButton;
@@ -57,8 +57,8 @@ public class LoginPage extends AnyPage {
         return this;
     }
 
-    public LoginPage selectDevServer() {
-        devButton.click();
+    public LoginPage selectQAServer() {
+        qaButton.click();
         doneButton.click();
         return this;
     }

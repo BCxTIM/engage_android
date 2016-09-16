@@ -9,4 +9,5 @@ public interface NavigationHelper {
     void goToPlayersScreen();
     void openAboutTagPayForm();
     void openContactTagPayForm();
+    void goToMyProfile();
 }

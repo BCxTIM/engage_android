@@ -18,7 +18,7 @@ public class MyProfilePage extends AnyPage {
     @AndroidFindBy(id = APPID + "tool_bar_title")
     public AndroidElement myProfileTitle;
 
-    @AndroidFindBy(id = APPID + "ivPencil")
+    @AndroidFindBy(id = APPID + "ivEditProfile")
     public AndroidElement editProfileButton;
 
     @AndroidFindBy(id = APPID + "tvName")

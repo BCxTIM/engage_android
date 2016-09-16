@@ -15,5 +15,5 @@ public interface LoginHelper {
     boolean checkErrorText(String text);
     boolean isGetCodeTrue();
 
-    void switchToDevServer(LoginModel loginModel);
+    void switchToQAServer(LoginModel loginModel);
 }

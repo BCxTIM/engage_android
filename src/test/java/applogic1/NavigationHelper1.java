@@ -33,4 +33,9 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
         pages.myProfilePage.ensurePageLoaded();
         pages.myProfilePage.openContactTagPayForm();
     }
+
+    @Override
+    public void goToMyProfile() {
+        pages.internalPage.openMyProfile();
+    }
 }
