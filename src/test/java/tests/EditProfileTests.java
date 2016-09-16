@@ -69,7 +69,7 @@ public class EditProfileTests  extends TestBase {
     public void changeNameInvalid() throws Exception {
         //check with empty fields
         String emptyErrorText = "Name should be 1 or more characters";
-        EditProfileModel profileModel = new EditProfileModel().setFullName("");
+        EditProfileModel profileModel = new EditProfileModel().setFullName(""); //TODO разобраться почему добавляется в поле еще старые значения
         app.getEditProfileHelper().setFullName(profileModel);
         assertTrue(app.getEditProfileHelper().isFullNameHaveError(emptyErrorText));
 
