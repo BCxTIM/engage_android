@@ -38,7 +38,7 @@ public class EditProfilePage extends InternalPage {
     @AndroidFindBy(id = APPID + "ivUserImage")
     public AndroidElement logo;
 
-    @AndroidFindBy(id = APPID + "btnSave")
+    @AndroidFindBy(id = APPID + "tvInvitaionTitle")
     public AndroidElement saveButton;
 
     @AndroidFindBy(id = APPID + "backArrow")
@@ -102,8 +102,7 @@ public class EditProfilePage extends InternalPage {
     }
 
     public void clickSaveButton() {
-        invitationField.click();
-        phoneNumber.click();
+        driver.hideKeyboard();
         saveButton.click();
     }
 
