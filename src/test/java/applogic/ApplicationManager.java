@@ -17,6 +17,7 @@ public interface ApplicationManager {
     PlayersHelper getPlayersHelper();
     TeamHelper getTeamHelper();
     ContactTagPayHelper getContactTagPayHelper();
+    TeamInfoHelper getTeamInfoHelper();
 
     void stop();
     AndroidDriver getAndroidDriver();

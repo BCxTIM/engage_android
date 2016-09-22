@@ -24,6 +24,7 @@ public class ApplicationManager1 implements ApplicationManager {
     private PlayersHelper playersHelper;
     private TeamHelper teamHelper;
     private ContactTagPayHelper contactTagPayHelper;
+    private TeamInfoHelper teamInfoHelper;
 
     private AndroidDriver driver;
     private AppiumDriverLocalService service = AppiumDriverLocalService.buildDefaultService();
@@ -56,6 +57,7 @@ public class ApplicationManager1 implements ApplicationManager {
         playersHelper = new PlayersHelper1(this);
         teamHelper = new TeamHelper1(this);
         contactTagPayHelper = new ContactTagPayHelper1(this);
+        teamInfoHelper = new TeamInfoHelper1(this);
 
 
     }
@@ -100,6 +102,10 @@ public class ApplicationManager1 implements ApplicationManager {
 
     public ContactTagPayHelper getContactTagPayHelper() {
         return contactTagPayHelper;
+    }
+
+    public TeamInfoHelper getTeamInfoHelper() {
+        return teamInfoHelper;
     }
 
 

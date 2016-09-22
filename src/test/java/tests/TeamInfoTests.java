@@ -20,12 +20,18 @@ public class TeamInfoTests extends TestBase {
     @BeforeMethod
     public void openTeamInfoPage() throws Exception {
         app.getNavigationHelper().goToMyProfile();
-        app.getNavigationHelper().goToTeamPage();
+        app.getNavigationHelper().goToTeamInfo();
     }
 
     @Test
     public void changeTeamInfo() throws Exception {
         EditTeamModel editTeamModel = new EditTeamModel().setTitle("test team").setDesctiption("test description");
+        app.getTeamInfoHelper().changeTeamInfo(editTeamModel);
+
+        //TODO добавить проверку на изменения в тиме в тим пэйдже
+
+        EditTeamModel editTeamModel1 = new EditTeamModel().setTitle("60097171 team").setDesctiption("60097171 description");
+        app.getTeamInfoHelper().changeTeamInfo(editTeamModel1);
 
     }
 
