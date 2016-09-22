@@ -21,6 +21,7 @@ public class AboutTagPayTest extends TestBase {
 
     @BeforeMethod
     public void openAboutTagPayPage() throws Exception {
+        app.getNavigationHelper().goToMyProfile();
         app.getNavigationHelper().openAboutTagPayForm();
     }
 

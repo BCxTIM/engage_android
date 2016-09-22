@@ -21,6 +21,7 @@ public class ContactTagPayTests extends TestBase {
 
    @BeforeMethod
     public void goToContactTagPayForm() throws Exception {
+       app.getNavigationHelper().goToMyProfile();
        app.getNavigationHelper().openContactTagPayForm();
    }
 
