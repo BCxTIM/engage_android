@@ -8,5 +8,7 @@ public interface TeamHelper {
     void selectTeam1();
     void selectTeam2();
     boolean loadTeamPage();
+    boolean teamName(String name);
+    boolean teamDescription(String description);
 
 }

@@ -28,7 +28,15 @@ public class TeamHelper1 extends DriverBasedHelper implements TeamHelper {
         return pages.teamPage.waitPageLoaded();
     }
 
+    @Override
+    public boolean teamName(String name) {
+        return pages.teamPage.titleName.getText().contains(name);
+    }
 
-    
+    @Override
+    public boolean teamDescription(String description) {
+        return pages.teamPage.titleDescription.getText().contains(description);
+    }
+
 
 }

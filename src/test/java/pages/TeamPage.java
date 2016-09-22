@@ -23,6 +23,12 @@ public class TeamPage extends InternalPage {
     @AndroidFindBy(id = APPID + "rlHeader")
     public AndroidElement teamPage;
 
+    @AndroidFindBy(id = APPID + "tvTitle")
+    public AndroidElement titleName;
+
+    @AndroidFindBy(id = APPID + "description_title")
+    public AndroidElement titleDescription;
+
     public TeamPage ensurePageLoaded() {
         super.ensurePageLoaded();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "rlHeader")));
