@@ -20,8 +20,6 @@ public class EditProfileHelper1 extends DriverBasedHelper implements EditProfile
         pages.editProfilePage
                 .setFullName(editProfileModel.getFullName())
                 .clickLogo()
-//                .setCountry(editProfileModel.getCountryCode())
-//                .setPhone(editProfileModel.getPhone())
                 .setProfession(editProfileModel.getProfession())
                 .clickLogo()
                 .clickSaveButton();
@@ -30,7 +28,6 @@ public class EditProfileHelper1 extends DriverBasedHelper implements EditProfile
     public void setFullName(EditProfileModel editProfileModel) {
         pages.editProfilePage
                 .setFullName(editProfileModel.getFullName())
-//                .clickLogo()
                 .clickSaveButton();
     }
 
@@ -46,7 +43,6 @@ public class EditProfileHelper1 extends DriverBasedHelper implements EditProfile
     public void setProfession(EditProfileModel editProfileModel) {
         pages.editProfilePage
                 .setProfession(editProfileModel.getProfession())
-//                .clickLogo()
                 .clickSaveButton();
     }
 
@@ -63,8 +59,6 @@ public class EditProfileHelper1 extends DriverBasedHelper implements EditProfile
     }
 
     public boolean isFullNameHaveError(String text) {
-//        pages.editProfilePage.ensurePageLoaded();
-//        driver.scrollTo(text);
         return pages.editProfilePage.errorFullName.getText().contains(text);
     }
 
@@ -74,7 +68,6 @@ public class EditProfileHelper1 extends DriverBasedHelper implements EditProfile
     }
 
     public boolean isProfessionHaveError(String text) {
-//       pages.editProfilePage.ensurePageLoaded();
         return pages.editProfilePage.errorProfession.getText().contains(text);
     }
 }

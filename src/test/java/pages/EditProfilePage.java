@@ -70,6 +70,7 @@ public class EditProfilePage extends InternalPage {
     }
 
     public EditProfilePage setFullName(String text) {
+        fullNameField.clear();
         fullNameField.sendKeys(text);
         return this;
     }
@@ -87,6 +88,7 @@ public class EditProfilePage extends InternalPage {
     }
 
     public EditProfilePage setProfession(String text) {
+        professionField.clear();
         professionField.sendKeys(text);
         return this;
     }
