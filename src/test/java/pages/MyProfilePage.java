@@ -39,6 +39,9 @@ public class MyProfilePage extends AnyPage {
     @AndroidFindBy(xpath = "//android.widget.ListView[1]/android.widget.LinearLayout[4]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
     public AndroidElement contactTagPayLink;
 
+    @AndroidFindBy(id = APPID + "team_info_text_view")
+    public AndroidElement teamInfoLink;
+
     public MyProfilePage openAboutForm() {
         optionButton.click();
         aboutLink.click();
@@ -59,6 +62,11 @@ public class MyProfilePage extends AnyPage {
     public MyProfilePage openContactTagPayForm() {
         optionButton.click();
         contactTagPayLink.click();
+        return this;
+    }
+
+    public MyProfilePage openTeamInfo() {
+        teamInfoLink.click();
         return this;
     }
 

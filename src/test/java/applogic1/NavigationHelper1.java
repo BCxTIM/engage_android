@@ -38,4 +38,9 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
     public void goToMyProfile() {
         pages.internalPage.openMyProfile();
     }
+
+    @Override
+    public void goToTeamInfo() {
+        pages.myProfilePage.openTeamInfo();
+    }
 }

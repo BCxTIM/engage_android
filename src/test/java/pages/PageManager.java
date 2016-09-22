@@ -22,6 +22,7 @@ public class PageManager {
     public PlayerPage playerPage;
     public TeamPage teamPage;
     public ContactTagPayPage contactTagPayPage;
+    public TeamInfoPage teamInfoPage;
 
 
     public PageManager(AndroidDriver driver) {
@@ -37,6 +38,7 @@ public class PageManager {
         playerPage = initElements(new PlayerPage(this));
         teamPage = initElements(new TeamPage(this));
         contactTagPayPage = initElements(new ContactTagPayPage(this));
+        teamInfoPage = initElements(new TeamInfoPage(this));
 
 
     }

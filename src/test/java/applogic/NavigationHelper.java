@@ -10,4 +10,5 @@ public interface NavigationHelper {
     void openAboutTagPayForm();
     void openContactTagPayForm();
     void goToMyProfile();
+    void goToTeamInfo();
 }
