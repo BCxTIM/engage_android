@@ -22,7 +22,7 @@ public class TeamInfoPage  extends AnyPage{
     @AndroidFindBy(id = APPID + "edtTitle")
     public AndroidElement descriptionField;
 
-    @AndroidFindBy(id = APPID + "ivUserImage")
+    @AndroidFindBy(id = APPID + "news_layout")
     public AndroidElement logo;
 
     public TeamInfoPage openEditTeamInfo() {
