@@ -3,11 +3,11 @@ package model;
 /**
  * Created by timrusso on 9/26/16.
  */
-public class WhistleModel {
+public class SearchFeedModel {
 
     private String text;
 
-    public WhistleModel setText(String text) {
+    public SearchFeedModel setText(String text) {
         this.text = text;
         return this;
     }

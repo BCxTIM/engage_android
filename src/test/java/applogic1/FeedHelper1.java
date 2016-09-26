@@ -2,6 +2,8 @@ package applogic1;
 
 import applogic.ApplicationManager;
 import applogic.FeedHelper;
+import model.SearchFeedModel;
+import model.WhistleModel;
 
 /**
  * Created by timrusso on 9/26/16.
@@ -16,6 +18,7 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
         this.manager = manager;
     }
 
+
     @Override
     public void createArticle() {
 
@@ -27,8 +30,11 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     }
 
     @Override
-    public void createWhistle() {
-
+    public void createWhistle(WhistleModel whistleModel) {
+        pages.feedsPage.ensurePageLoaded().openCreateWhisltePage();
+        pages.whistlePage
+                .setText(whistleModel.getText())
+                .saveWhistle();
     }
 
     @Override
@@ -42,7 +48,7 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     }
 
     @Override
-    public void editWhistle() {
+    public void editWhistle(WhistleModel whistleModel) {
 
     }
 
@@ -97,17 +103,9 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     }
 
     @Override
-    public void searchArticle() {
+    public void searchFeed(SearchFeedModel searchFeedModel) {
 
     }
 
-    @Override
-    public void searchImage() {
 
-    }
-
-    @Override
-    public void searchWhistle() {
-
-    }
 }

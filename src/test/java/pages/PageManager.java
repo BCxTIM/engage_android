@@ -23,6 +23,8 @@ public class PageManager {
     public TeamPage teamPage;
     public ContactTagPayPage contactTagPayPage;
     public TeamInfoPage teamInfoPage;
+    public FeedsPage feedsPage;
+    public WhistlePage whistlePage;
 
 
     public PageManager(AndroidDriver driver) {
@@ -39,6 +41,8 @@ public class PageManager {
         teamPage = initElements(new TeamPage(this));
         contactTagPayPage = initElements(new ContactTagPayPage(this));
         teamInfoPage = initElements(new TeamInfoPage(this));
+        feedsPage = initElements(new FeedsPage(this));
+        whistlePage = initElements(new WhistlePage(this));
 
 
     }
