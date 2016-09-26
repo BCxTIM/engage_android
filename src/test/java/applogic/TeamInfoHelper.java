@@ -7,6 +7,8 @@ import model.EditTeamModel;
  */
 public interface TeamInfoHelper {
 
+    void goToTeamPage();
+
     void changeTeamInfo(EditTeamModel editTeamModel);
 
 }

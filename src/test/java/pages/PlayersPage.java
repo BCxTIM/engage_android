@@ -54,6 +54,19 @@ public class PlayersPage extends InternalPage {
     @AndroidFindBy(id = APPID + "dialogClose")
     public AndroidElement invitationAlert;
 
+    @AndroidFindBy(id = APPID + "title")
+    public AndroidElement switchButton;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ImageView[1]")
+    public AndroidElement optionMenu;
+
+
+    public PlayersPage openTeamsPage() {
+        optionMenu.click();
+        switchButton.click();
+        return this;
+    }
+
 
     public PlayersPage ensurePageLoaded() {
         super.ensurePageLoaded();

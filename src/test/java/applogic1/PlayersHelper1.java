@@ -15,6 +15,11 @@ public class PlayersHelper1 extends DriverBasedHelper implements PlayersHelper {
         this.manager = manager;
     }
 
+
+    public void goToTeamPage() {
+        pages.playersPage.openTeamsPage();
+    }
+
     public boolean ifNoPlayers(String text) {
         return pages.playersPage.addManuallyButton.getText().contains(text);
     }

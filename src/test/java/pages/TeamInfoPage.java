@@ -22,8 +22,20 @@ public class TeamInfoPage  extends AnyPage{
     @AndroidFindBy(id = APPID + "edtTitle")
     public AndroidElement descriptionField;
 
-    @AndroidFindBy(id = APPID + "news_layout")
-    public AndroidElement logo;
+    @AndroidFindBy(id = APPID + "tvInvitaionTitle")
+    public AndroidElement saveButton;
+
+    @AndroidFindBy(xpath = "//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.View[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ImageView[1]")
+    public AndroidElement optionMenu;
+
+    @AndroidFindBy(xpath = "//android.widget.ListView[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
+    public AndroidElement switchButton;
+
+    public TeamInfoPage openTeamsPage() {
+        optionMenu.click();
+        switchButton.click();
+        return this;
+    }
 
     public TeamInfoPage openEditTeamInfo() {
         editTeamInfoButton.click();
@@ -43,7 +55,8 @@ public class TeamInfoPage  extends AnyPage{
     }
 
     public void saveTeamInfo() {
-        logo.click();
+        driver.hideKeyboard();
+        saveButton.click();
     }
 
 }

@@ -44,11 +44,11 @@ public class PlayersTest extends TestBase {
 
     @Test(dependsOnMethods = "addPlayer")
     public void checkToUserNotAppearInOtherTeam() throws Exception {
-        app.getNavigationHelper().goToTeamPage();
+        app.getPlayersHelper().goToTeamPage();
         app.getTeamHelper().selectTeam2();
         app.getNavigationHelper().goToPlayersScreen();
         assertTrue(app.getPlayersHelper().ifNoPlayers("Add Manually"));
-        app.getNavigationHelper().goToTeamPage();
+        app.getPlayersHelper().goToTeamPage();
         app.getTeamHelper().selectTeam1();
         app.getNavigationHelper().goToPlayersScreen();
     }

@@ -14,9 +14,6 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
         this.manager = manager;
     }
 
-    public void goToTeamPage() {
-        pages.internalPage.openTeamsPage();
-    }
 
     public void goToPlayersScreen() {
         pages.internalPage.openPlayersMenu();

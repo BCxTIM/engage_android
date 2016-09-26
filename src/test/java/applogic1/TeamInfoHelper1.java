@@ -23,5 +23,10 @@ public class TeamInfoHelper1 extends DriverBasedHelper implements TeamInfoHelper
                 .setTeamName(editTeamModel.getTitle())
                 .setTeamDescription(editTeamModel.getDescription())
                 .saveTeamInfo();
+        pages.myProfilePage.ensurePageLoaded();
+    }
+
+    public void goToTeamPage() {
+        pages.teamInfoPage.openTeamsPage();
     }
 }

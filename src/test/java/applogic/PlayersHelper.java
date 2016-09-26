@@ -6,6 +6,8 @@ import model.PlayerModel;
  * Created by timrusso on 5/19/16.
  */
 public interface PlayersHelper {
+
+    void goToTeamPage();
     void goToAddPlayer();
     boolean ifNoPlayers(String text);
     boolean ifPlayerAdded(String text);

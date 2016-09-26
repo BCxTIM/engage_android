@@ -32,11 +32,12 @@ public class TeamInfoTests extends TestBase {
         EditTeamModel editTeamModel = new EditTeamModel().setTitle(teamName).setDesctiption(teamDescription);
         app.getTeamInfoHelper().changeTeamInfo(editTeamModel);
 
-        app.getNavigationHelper().goToTeamPage();
+        app.getTeamInfoHelper().goToTeamPage();
         assertTrue(app.getTeamHelper().teamName(teamName));
         assertTrue(app.getTeamHelper().teamDescription(teamDescription));
         app.getTeamHelper().selectTeam1();
 
+        this.openTeamInfoPage();
         EditTeamModel editTeamModel1 = new EditTeamModel().setTitle("60097171 team").setDesctiption("60097171 description");
         app.getTeamInfoHelper().changeTeamInfo(editTeamModel1);
 
