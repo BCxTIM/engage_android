@@ -8,9 +8,12 @@ import model.WhistleModel;
  */
 public interface FeedHelper {
 
+    boolean ifNoFeeds(String text);
+
     void createArticle();
     void createImage();
     void createWhistle(WhistleModel whistleModel);
+    boolean ifWhistleCreated(String text);
 
     void editFeed(WhistleModel whistleModel);
 

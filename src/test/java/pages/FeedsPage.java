@@ -63,6 +63,14 @@ public class FeedsPage extends AnyPage {
     @AndroidFindBy(id = APPID + "tvDelete")
     public AndroidElement deleteFeedButton;
 
+    ///////////////////////////////////////////
+
+    @AndroidFindBy(id = APPID + "tvNoContentYet")
+    public AndroidElement noFeedsText;
+
+    @AndroidFindBy(id = APPID + "tvTitle")
+    public AndroidElement feedTitle;
+
 
 
     //Create

@@ -20,6 +20,11 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
 
     @Override
+    public boolean ifNoFeeds(String text) {
+        return pages.feedsPage.noFeedsText.getText().contains(text);
+    }
+
+    @Override
     public void createArticle() {
 
     }
@@ -35,6 +40,11 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
         pages.whistlePage
                 .setText(whistleModel.getText())
                 .saveWhistle();
+    }
+
+    @Override
+    public boolean ifWhistleCreated(String text) {
+        return pages.feedsPage.feedTitle.getText().contains(text);
     }
 
     @Override
