@@ -11,6 +11,7 @@
             <class name="tests.ContactTagPayTests"/>
             <class name="tests.EditProfileTests"/>
             <class name="tests.PlayersTest"/>
+            <class name="tests.TeamInfoTests"/>
 
         </classes>
     </test>
