@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 /**
  * Created by timrusso on 9/26/16.
  */
-public class WhistlePage extends AnyPage {
+public class WhistlePage extends FeedsPage {
 
     public WhistlePage(PageManager pages) {
         super(pages);
@@ -16,14 +16,14 @@ public class WhistlePage extends AnyPage {
 
     public WhistlePage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "")));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id(APPID + "tvActionName"), "New whistle "));
         return this;
     }
 
-    @AndroidFindBy(id = APPID + "")
+    @AndroidFindBy(id = APPID + "edtDescription")
     public AndroidElement textField;
 
-    @AndroidFindBy(id = APPID + "")
+    @AndroidFindBy(id = APPID + "btnSaveChanges")
     public AndroidElement saveButton;
 
     public WhistlePage setText(String text) {

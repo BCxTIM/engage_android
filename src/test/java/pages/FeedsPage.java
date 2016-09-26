@@ -16,19 +16,60 @@ public class FeedsPage extends AnyPage {
 
     public FeedsPage ensurePageLoaded() {
         super.ensurePageLoaded();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id(APPID + "")));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id(APPID + "tool_bar_title"), "Feed"));
         return this;
     }
 
+    /**
+     * Popups buttons
+     */
+
+    //Publish popup
+    @AndroidFindBy(id = APPID + "btnSave")
+    public AndroidElement publishButtonInPopUp;
+
+    @AndroidFindBy(id = APPID + "btnDiscard")
+    public AndroidElement justSaveButtonInPopup;
+
+
+
+    public void publishFeedInPopup() {
+        publishButtonInPopUp.click();
+    }
+
+    public void justSaveFeedInPopup() {
+        justSaveButtonInPopup.click();
+    }
+
+    //Abort Popup
+    @AndroidFindBy(id = APPID + "btnAbort")
+    public AndroidElement abortButtonInPopUp;
+
+    @AndroidFindBy(id = APPID + "btnCancel")
+    public AndroidElement cancelButtonInPopUp;
+
+
+
+    public void abortChangesInPopup() {
+        abortButtonInPopUp.click();
+    }
+
+    public void cancelChangesInPopup() {
+        cancelButtonInPopUp.click();
+    }
+    /**
+     * End popups buttons
+     */
+
     //Create
 
-    @AndroidFindBy(id = APPID + "")
+    @AndroidFindBy(id = APPID + "rlTabArticle")
     public AndroidElement createArticleButton;
 
-    @AndroidFindBy(id = APPID + "")
+    @AndroidFindBy(id = APPID + "rlTabImage")
     public AndroidElement createImageButton;
 
-    @AndroidFindBy(id = APPID + "")
+    @AndroidFindBy(id = APPID + "rlTabWhistle")
     public AndroidElement createWhistleButton;
 
 

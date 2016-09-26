@@ -35,6 +35,7 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
         pages.whistlePage
                 .setText(whistleModel.getText())
                 .saveWhistle();
+        pages.feedsPage.publishFeedInPopup();
     }
 
     @Override
