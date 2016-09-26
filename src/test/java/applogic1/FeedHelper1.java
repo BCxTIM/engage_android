@@ -31,37 +31,17 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
     @Override
     public void createWhistle(WhistleModel whistleModel) {
-        pages.feedsPage.ensurePageLoaded().openCreateWhisltePage();
+        pages.feedsPage.ensurePageLoaded().openCreateWhistlePage();
         pages.whistlePage
                 .setText(whistleModel.getText())
                 .saveWhistle();
-        pages.feedsPage.publishFeedInPopup();
     }
 
     @Override
-    public void editArticle() {
+    public void editFeed(WhistleModel whistleModel) {
 
     }
 
-    @Override
-    public void editImage() {
-
-    }
-
-    @Override
-    public void editWhistle(WhistleModel whistleModel) {
-
-    }
-
-    @Override
-    public void createWhistlePublished() {
-
-    }
-
-    @Override
-    public void editWhistlePublished() {
-
-    }
 
     @Override
     public void publishFeed() {
@@ -73,19 +53,10 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
     }
 
-    @Override
-    public void deleteArticle() {
-
-    }
 
     @Override
-    public void deleteImage() {
-
-    }
-
-    @Override
-    public void deleteWhistle() {
-
+    public void deleteFeed() {
+        pages.feedsPage.ensurePageLoaded().deleteFeed();
     }
 
     @Override

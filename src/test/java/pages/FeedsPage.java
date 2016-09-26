@@ -24,39 +24,18 @@ public class FeedsPage extends AnyPage {
      * Popups buttons
      */
 
-    //Publish popup
     @AndroidFindBy(id = APPID + "btnSave")
-    public AndroidElement publishButtonInPopUp;
+    public AndroidElement saveButtonInPopup;
 
     @AndroidFindBy(id = APPID + "btnDiscard")
-    public AndroidElement justSaveButtonInPopup;
+    public AndroidElement cancelButtonInPopup;
 
-
-
-    public void publishFeedInPopup() {
-        publishButtonInPopUp.click();
-    }
-
-    public void justSaveFeedInPopup() {
-        justSaveButtonInPopup.click();
-    }
-
-    //Abort Popup
     @AndroidFindBy(id = APPID + "btnAbort")
     public AndroidElement abortButtonInPopUp;
 
     @AndroidFindBy(id = APPID + "btnCancel")
     public AndroidElement cancelButtonInPopUp;
 
-
-
-    public void abortChangesInPopup() {
-        abortButtonInPopUp.click();
-    }
-
-    public void cancelChangesInPopup() {
-        cancelButtonInPopUp.click();
-    }
     /**
      * End popups buttons
      */
@@ -75,26 +54,14 @@ public class FeedsPage extends AnyPage {
 
     //Edit
 
-    @AndroidFindBy(id = APPID + "")
-    public AndroidElement editArticleButton;
-
-    @AndroidFindBy(id = APPID + "")
-    public AndroidElement editImageButton;
-
-    @AndroidFindBy(id = APPID + "")
-    public AndroidElement editWhistleButton;
+    @AndroidFindBy(id = APPID + "tvEdit")
+    public AndroidElement editFeedButton;
 
 
     //Delete
 
-    @AndroidFindBy(id = APPID + "")
-    public AndroidElement deleteArticleButton;
-
-    @AndroidFindBy(id = APPID + "")
-    public AndroidElement deleteImageButton;
-
-    @AndroidFindBy(id = APPID + "")
-    public AndroidElement deleteWhistleButton;
+    @AndroidFindBy(id = APPID + "tvDelete")
+    public AndroidElement deleteFeedButton;
 
 
 
@@ -107,37 +74,23 @@ public class FeedsPage extends AnyPage {
         createImageButton.click();
     }
 
-    public void openCreateWhisltePage() {
+    public void openCreateWhistlePage() {
         createWhistleButton.click();
     }
 
     //Edit
 
-    public void editArticle() {
-        editArticleButton.click();
+    public void editFeed() {
+        editFeedButton.click();
     }
 
-    public void editImage() {
-        editWhistleButton.click();
-    }
-
-    public void editWhislte() {
-        editWhistleButton.click();
-    }
 
 
     //Delete
 
-    public void deleteArticle() {
-        deleteArticleButton.click();
-    }
-
-    public void deleteImage() {
-        deleteImageButton.click();
-    }
-
-    public void deleteWhislte() {
-        deleteWhistleButton.click();
+    public void deleteFeed() {
+        deleteFeedButton.click();
+        saveButtonInPopup.click();
     }
 
 }

@@ -12,19 +12,12 @@ public interface FeedHelper {
     void createImage();
     void createWhistle(WhistleModel whistleModel);
 
-    void editArticle();
-    void editImage();
-    void editWhistle(WhistleModel whistleModel);
-
-    void createWhistlePublished();
-    void editWhistlePublished();
+    void editFeed(WhistleModel whistleModel);
 
     void publishFeed();
     void unPublishFeed();
 
-    void deleteArticle();
-    void deleteImage();
-    void deleteWhistle();
+    void deleteFeed();
 
     void openArticle();
     void openImage();

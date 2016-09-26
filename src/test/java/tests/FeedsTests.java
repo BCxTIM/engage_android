@@ -23,4 +23,9 @@ public class FeedsTests  extends TestBase{
         WhistleModel whistleModel = new WhistleModel().setText("whistle");
         app.getFeedHelper().createWhistle(whistleModel);
     }
+
+    @Test(dependsOnMethods = "createWhistle")
+    public void deleteWhistle() throws Exception {
+        app.getFeedHelper().deleteFeed();
+    }
 }

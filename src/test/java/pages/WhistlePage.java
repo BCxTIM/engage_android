@@ -33,6 +33,7 @@ public class WhistlePage extends FeedsPage {
 
     public void saveWhistle() {
         saveButton.click();
+        this.saveButtonInPopup.click();
     }
 
 }
