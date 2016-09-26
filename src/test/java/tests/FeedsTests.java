@@ -24,9 +24,16 @@ public class FeedsTests  extends TestBase{
         WhistleModel whistleModel = new WhistleModel().setText(whistleTitle);
         app.getFeedHelper().createWhistle(whistleModel);
         assertTrue(app.getFeedHelper().ifWhistleCreated(whistleTitle));
+        assertTrue(app.getFeedHelper().statusFeed("Unpublish"));
     }
 
     @Test(dependsOnMethods = "createWhistle")
+    public void unpublishWhistle() throws Exception {
+        app.getFeedHelper().publishUnpublishFeed();
+        assertTrue(app.getFeedHelper().statusFeed("Publish"));
+    }
+
+    @Test(dependsOnMethods = "unpublishWhistle")
     public void editWhistle() throws Exception {
         String whistleTitle = "edit whistle";
         WhistleModel whistleModel = new WhistleModel().setText(whistleTitle);

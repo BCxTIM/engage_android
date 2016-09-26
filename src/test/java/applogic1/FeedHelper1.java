@@ -57,14 +57,15 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
 
     @Override
-    public void publishFeed() {
-
+    public void publishUnpublishFeed() {
+        pages.feedsPage.ensurePageLoaded().changeStatusFeed();
     }
 
     @Override
-    public void unPublishFeed() {
-
+    public boolean statusFeed(String text) {
+        return pages.feedsPage.publishButton.getText().contains(text);
     }
+
 
 
     @Override

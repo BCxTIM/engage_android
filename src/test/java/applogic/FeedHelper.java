@@ -17,8 +17,8 @@ public interface FeedHelper {
 
     void editFeed(WhistleModel whistleModel);
 
-    void publishFeed();
-    void unPublishFeed();
+    void publishUnpublishFeed();
+    boolean statusFeed(String text);
 
     void deleteFeed();
 

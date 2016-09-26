@@ -71,6 +71,13 @@ public class FeedsPage extends AnyPage {
     @AndroidFindBy(id = APPID + "tvTitle")
     public AndroidElement feedTitle;
 
+    @AndroidFindBy(id = APPID + "tvPublish")
+    public AndroidElement publishButton;
+
+    public void changeStatusFeed() {
+        publishButton.click();
+        saveButtonInPopup.click();
+    }
 
 
     //Create
