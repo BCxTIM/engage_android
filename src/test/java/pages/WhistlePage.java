@@ -27,6 +27,7 @@ public class WhistlePage extends FeedsPage {
     public AndroidElement saveButton;
 
     public WhistlePage setText(String text) {
+        textField.clear();
         textField.sendKeys(text);
         return this;
     }

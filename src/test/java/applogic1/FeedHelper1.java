@@ -39,7 +39,10 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
     @Override
     public void editFeed(WhistleModel whistleModel) {
-
+        pages.feedsPage.ensurePageLoaded().openEditFeed();
+        pages.whistlePage
+                .setText(whistleModel.getText())
+                .saveWhistle();
     }
 
 

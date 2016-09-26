@@ -80,10 +80,9 @@ public class FeedsPage extends AnyPage {
 
     //Edit
 
-    public void editFeed() {
+    public void openEditFeed() {
         editFeedButton.click();
     }
-
 
 
     //Delete
