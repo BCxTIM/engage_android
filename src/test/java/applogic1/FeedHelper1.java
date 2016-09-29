@@ -21,6 +21,11 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
 
     @Override
+    public void goBack() {
+        pages.imageFeedPage.goBack();
+    }
+
+    @Override
     public boolean ifNoFeeds(String text) {
         return pages.feedsPage.noFeedsText.getText().contains(text);
     }
@@ -88,7 +93,6 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     @Override
     public void openImageFeed() {
         pages.feedsPage.openImageFeed();
-        pages.imageFeedPage.goBack();
     }
 
     @Override

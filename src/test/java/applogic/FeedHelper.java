@@ -9,6 +9,8 @@ import model.WhistleModel;
  */
 public interface FeedHelper {
 
+    void goBack();
+
     boolean ifNoFeeds(String text);
 
     void createArticle();

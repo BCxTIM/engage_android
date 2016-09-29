@@ -64,6 +64,7 @@ public class FeedsTests  extends TestBase{
     public void openImageFeed() throws Exception {
         app.getFeedHelper().openImageFeed();
         assertTrue(app.getFeedHelper().checkImageTitle("image"));
+        app.getFeedHelper().goBack();
     }
 
     @Test(dependsOnMethods = "openImageFeed")

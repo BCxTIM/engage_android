@@ -37,6 +37,13 @@ public class ImageFeedPage extends FeedsPage {
         return this;
     }
 
+    @AndroidFindBy(id = APPID + "backArrow")
+    public AndroidElement backButton;
+
+    public void goBack() {
+        backButton.click();
+    }
+
 
     @AndroidFindBy(id = APPID + "tvTitle")
     public AndroidElement titleText;
