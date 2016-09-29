@@ -23,8 +23,7 @@ public class WhistlePage extends FeedsPage {
     @AndroidFindBy(id = APPID + "edtDescription")
     public AndroidElement textField;
 
-    @AndroidFindBy(id = APPID + "btnSaveChanges")
-    public AndroidElement saveButton;
+
 
     public WhistlePage setText(String text) {
         textField.clear();
@@ -33,7 +32,7 @@ public class WhistlePage extends FeedsPage {
     }
 
     public void saveWhistle() {
-        saveButton.click();
+        this.saveButton.click();
         this.saveButtonInPopup.click();
     }
 

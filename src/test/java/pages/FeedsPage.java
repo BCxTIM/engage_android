@@ -20,6 +20,16 @@ public class FeedsPage extends AnyPage {
         return this;
     }
 
+
+    @AndroidFindBy(id = APPID + "image")
+    public AndroidElement imageFeedButton;
+
+
+    public void openImageFeed() {
+        imageFeedButton.click();
+    }
+
+
     /**
      * Popups buttons
      */
@@ -78,6 +88,11 @@ public class FeedsPage extends AnyPage {
         publishButton.click();
         saveButtonInPopup.click();
     }
+
+    //Save
+    @AndroidFindBy(id = APPID + "btnSaveChanges")
+    public AndroidElement saveButton;
+
 
 
     //Create

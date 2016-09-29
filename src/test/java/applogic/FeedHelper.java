@@ -1,5 +1,6 @@
 package applogic;
 
+import model.ImageModel;
 import model.SearchFeedModel;
 import model.WhistleModel;
 
@@ -11,11 +12,13 @@ public interface FeedHelper {
     boolean ifNoFeeds(String text);
 
     void createArticle();
-    void createImage();
-    void createWhistle(WhistleModel whistleModel);
-    boolean ifWhistleCreated(String text);
 
-    void editFeed(WhistleModel whistleModel);
+    void createImage(ImageModel imageModel);
+
+    void createWhistle(WhistleModel whistleModel);
+    boolean ifFeedCreated(String text);
+
+    void editWhistle(WhistleModel whistleModel);
 
     void publishUnpublishFeed();
     boolean statusFeed(String text);
@@ -23,7 +26,8 @@ public interface FeedHelper {
     void deleteFeed();
 
     void openArticle();
-    void openImage();
+    void openImageFeed();
+    boolean checkImageTitle(String text);
 
     void showFullWhistle();
 

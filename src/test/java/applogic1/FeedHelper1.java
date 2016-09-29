@@ -2,6 +2,7 @@ package applogic1;
 
 import applogic.ApplicationManager;
 import applogic.FeedHelper;
+import model.ImageModel;
 import model.SearchFeedModel;
 import model.WhistleModel;
 
@@ -30,8 +31,12 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     }
 
     @Override
-    public void createImage() {
-
+    public void createImage(ImageModel imageModel) {
+        pages.feedsPage.ensurePageLoaded().openCreateImagePage();
+        pages.imageFeedPage
+                .selectImageFromGallery()
+                .setText(imageModel.getTitle())
+                .saveImage();
     }
 
     @Override
@@ -43,12 +48,13 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     }
 
     @Override
-    public boolean ifWhistleCreated(String text) {
+    public boolean ifFeedCreated(String text) {
+        pages.feedsPage.ensurePageLoaded();
         return pages.feedsPage.feedTitle.getText().contains(text);
     }
 
     @Override
-    public void editFeed(WhistleModel whistleModel) {
+    public void editWhistle(WhistleModel whistleModel) {
         pages.feedsPage.ensurePageLoaded().openEditFeed();
         pages.whistlePage
                 .setText(whistleModel.getText())
@@ -73,15 +79,23 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
         pages.feedsPage.ensurePageLoaded().deleteFeed();
     }
 
+
     @Override
     public void openArticle() {
 
     }
 
     @Override
-    public void openImage() {
-
+    public void openImageFeed() {
+        pages.feedsPage.openImageFeed();
+        pages.imageFeedPage.goBack();
     }
+
+    @Override
+    public boolean checkImageTitle(String text) {
+        return pages.imageFeedPage.titleText.getText().contains(text);
+    }
+
 
     @Override
     public void showFullWhistle() {
