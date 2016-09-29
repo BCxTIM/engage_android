@@ -12,6 +12,7 @@
             <class name="tests.EditProfileTests"/>
             <class name="tests.PlayersTest"/>
             <class name="tests.TeamInfoTests"/>
+            <class name="tests.FeedsTests"/>
 
         </classes>
     </test>
