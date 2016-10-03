@@ -1,5 +1,6 @@
 package tests;
 
+import model.ArticleModel;
 import model.ImageModel;
 import model.WhistleModel;
 import org.testng.annotations.BeforeClass;
@@ -15,6 +16,9 @@ public class FeedsTests  extends TestBase{
 
 
     private String noFeedText = "No content yet";
+
+    private String articleTitle = "Title article";
+    private String articleDescription = "Description article";
 
     @BeforeClass
     public void login() throws Exception {
@@ -69,6 +73,29 @@ public class FeedsTests  extends TestBase{
 
     @Test(dependsOnMethods = "openImageFeed")
     public void deleteImageFeed() throws Exception {
+        app.getFeedHelper().deleteFeed();
+        assertTrue(app.getFeedHelper().ifNoFeeds(noFeedText));
+    }
+
+    @Test(dependsOnMethods = "deleteImageFeed")
+    public void createArticleUnpublished() throws Exception {
+
+        ArticleModel articleModel = new ArticleModel().setTitle(articleTitle).setDescription(articleDescription);
+        app.getFeedHelper().createArticle(articleModel);
+        assertTrue(app.getFeedHelper().ifFeedCreated(articleTitle));
+        assertTrue(app.getFeedHelper().statusFeed("Publish"));
+    }
+
+    @Test(dependsOnMethods = "createArticleUnpublished")
+    public void openArticle() throws Exception {
+        app.getFeedHelper().openArticle();
+        assertTrue(app.getFeedHelper().checkArticleTitle(articleTitle));
+        assertTrue(app.getFeedHelper().checkArticleDescription(articleDescription));
+        app.getFeedHelper().goBack();
+    }
+
+    @Test(dependsOnMethods = "openArticle")
+    public void deleteArticle() throws Exception {
         app.getFeedHelper().deleteFeed();
         assertTrue(app.getFeedHelper().ifNoFeeds(noFeedText));
     }

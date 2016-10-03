@@ -26,6 +26,7 @@ public class PageManager {
     public FeedsPage feedsPage;
     public WhistlePage whistlePage;
     public ImageFeedPage imageFeedPage;
+    public ArticlePage articlePage;
 
 
     public PageManager(AndroidDriver driver) {
@@ -45,6 +46,7 @@ public class PageManager {
         feedsPage = initElements(new FeedsPage(this));
         whistlePage = initElements(new WhistlePage(this));
         imageFeedPage = initElements(new ImageFeedPage(this));
+        articlePage = initElements(new ArticlePage(this));
 
 
     }

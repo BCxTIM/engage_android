@@ -29,6 +29,14 @@ public class FeedsPage extends AnyPage {
         imageFeedButton.click();
     }
 
+    @AndroidFindBy(id = APPID + "tvClickForMore")
+    public AndroidElement clickMoreButton;
+
+
+    public void openFullArticle() {
+        clickMoreButton.click();
+    }
+
 
     /**
      * Popups buttons
@@ -38,7 +46,7 @@ public class FeedsPage extends AnyPage {
     public AndroidElement saveButtonInPopup;
 
     @AndroidFindBy(id = APPID + "btnDiscard")
-    public AndroidElement cancelButtonInPopup;
+    public AndroidElement discardButtonInPopup;
 
     @AndroidFindBy(id = APPID + "btnAbort")
     public AndroidElement abortButtonInPopUp;

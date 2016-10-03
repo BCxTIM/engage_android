@@ -2,8 +2,8 @@ package applogic1;
 
 import applogic.ApplicationManager;
 import applogic.FeedHelper;
+import model.ArticleModel;
 import model.ImageModel;
-import model.SearchFeedModel;
 import model.WhistleModel;
 
 /**
@@ -31,9 +31,15 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
     }
 
     @Override
-    public void createArticle() {
-
+    public void createArticle(ArticleModel articleModel) {
+        pages.feedsPage.ensurePageLoaded().openCreateArticlePage();
+        pages.articlePage
+                .selectImageFromGallery()
+                .setTitle(articleModel.getTitle())
+                .setDescription(articleModel.getDescription())
+                .saveArticle();
     }
+
 
     @Override
     public void createImage(ImageModel imageModel) {
@@ -87,7 +93,7 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
 
     @Override
     public void openArticle() {
-
+        pages.feedsPage.openFullArticle();
     }
 
     @Override
@@ -100,16 +106,17 @@ public class FeedHelper1 extends DriverBasedHelper implements FeedHelper {
         return pages.imageFeedPage.titleText.getText().contains(text);
     }
 
-
     @Override
-    public void showFullWhistle() {
-
+    public boolean checkArticleTitle(String text) {
+        return pages.articlePage.articleTitle.getText().contains(text);
     }
 
     @Override
-    public void searchFeed(SearchFeedModel searchFeedModel) {
-
+    public boolean checkArticleDescription(String text) {
+        return pages.articlePage.articleDescription.getText().contains(text);
     }
+
+
 
 
 }
