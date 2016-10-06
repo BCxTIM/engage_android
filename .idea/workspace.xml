@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1281ec79-7f2c-49ce-b3fe-b8f3e73def55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" />
-    </list>
+    <list default="true" id="1281ec79-7f2c-49ce-b3fe-b8f3e73def55" name="Default" comment="" />
     <ignored path="engage_adviser_test.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />

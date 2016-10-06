@@ -5,7 +5,6 @@
         <parameter name="path" value="/"/>
         <classes>
 
-            <class name="tests.FeedsTests"/>
             <class name="tests.LoginFlowTests"/>
             <class name="tests.ContactUsTests"/>
             <class name="tests.AboutTagPayTest"/>
@@ -13,7 +12,7 @@
             <class name="tests.EditProfileTests"/>
             <class name="tests.PlayersTest"/>
             <class name="tests.TeamInfoTests"/>
-
+            <class name="tests.FeedsTests"/>
 
         </classes>
     </test>
